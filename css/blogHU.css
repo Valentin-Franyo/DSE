@@ -111,11 +111,14 @@
     .carousel-control-prev,
     .carousel-control-next {
         position: absolute;
-        top: 50%;
+        top: 30%;
         transform: translateY(-50%);
         font-size: 2rem;
         z-index: 1; /* A nyílak a kép felett legyenek */
         cursor: pointer;
+        background-color:transparent;
+        color: var(--sarga);
+        
      
        
     }
@@ -128,6 +131,7 @@
     .carousel-control-next {
         right: 10px;
     }
+
 
     
     
