@@ -1,0 +1,86 @@
+@import url(../scss/component.scss);
+
+footer {
+    padding: 2rem;
+}
+
+.footer-line {
+    height: 3px;
+    width: 100%;
+    background-color: var(--fekete);
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.527);
+}
+
+.first-page__footer{
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.footer-h4{
+    color: var(--sarga);
+    text-decoration:underline;
+}
+
+.footer-contact__p {
+    color: var(--feher);
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.first-page__footer a {
+    color: var(--feher);
+    text-decoration: underline;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer-follow__p {
+    color: var(--kek);
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.footer-subscribe__p {
+    text-align: center;
+    color: var(--kek);
+}
+
+/*feliratkozas gomb*/
+.footer-input__container {
+    display: flex;
+  }
+  /*deskop modban hover*/
+  .footer-form {
+    position: relative;
+  }
+    
+  .footer-input {
+    border: 3px solid var(--sarga);
+    padding-right: 40px;
+    flex-grow: 1;
+    border-radius: 10px;
+  }
+  
+  
+  .footer-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: var(--sarga);
+    border: 3px solid var(--sarga);
+    border-radius: 10px;
+  }
+
+  /*soc kontener*/
+  .footer-soc__container {
+    flex-direction: column;
+  }
+
+  .fa-facebook-f,
+  .fa-linkedin-in {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }

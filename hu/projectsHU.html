@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Science Europe</title>
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!---CSS-->
+    <link rel="stylesheet" href="../css/projectsHU.css" />
+
+    <!-- Material Symbols Outlined font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-----------------NAV------------------------------------->
+    <header>
+      <div class="logo-container">
+        <a href="../hu/homeHU.html" class="logo-link">
+          <img class="logo-svg" src="../assets/logo/dselogo.svg" alt="" />
+        </a>
+      </div>
+
+      <div id="nav-icon2" class="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="kozep">
+        <div class="hambi-container">
+          <div class="language-container">
+            <select id="language-select">
+              <option value="en">HU</option>
+              <option value="hu">ENG</option>
+            </select>
+          </div>
+          <div class="line line1"></div>
+          <ul class="list">
+            <li><a href="../hu/homeHU.html">Home</a></li>
+            <li class="hambi-dropdown__menu" id="projektek-menu">
+              <button onclick="handleDropdownClicked(event)">
+                Projektek
+                <span
+                  id="dropdown-icon-projektek"
+                  class="material-symbols-outlined"
+                >
+                  expand_more
+                </span>
+              </button>
+              <section class="dropdown__menu-labels">
+                <button>Projekt1</button>
+                <button>Projekt2</button>
+                <button>Projekt3</button>
+                <button onclick="ProjectsHU()">Tovabbi projektek</button>
+              </section>
+            </li>
+            <li class="hambi-dropdown__menu" id="blog-menu">
+              <button onclick="handleDropdownClicked(event)">
+                Blog
+                <span id="dropdown-icon-blog" class="material-symbols-outlined">
+                  expand_more
+                </span>
+              </button>
+              <section class="dropdown__menu-labels">
+                <button>blog1</button>
+                <button>blog2</button>
+                <button>blog3</button>
+                <button onclick="BlogHU()">Tovabbi blog</button>
+              </section>
+            </li>
+            <li class="hambi-dropdown__menu" id="portfolio-menu">
+              <button onclick="handleDropdownClicked(event)">
+                Portfolio
+                <span
+                  id="dropdown-icon-portfolio"
+                  class="material-symbols-outlined"
+                >
+                  expand_more
+                </span>
+              </button>
+              <section class="dropdown__menu-labels">
+                <button>Portfolio1</button>
+                <button>Portfolio2</button>
+                <button>Portfolio3</button>
+              </section>
+            </li>
+            <li><a href="../hu/contactHU.html">Kapcsolat</a></li>
+          </ul>
+          <div class="line"></div>
+          <div class="soc-icons">
+            <ul class="soc-ul">
+              <li class="soc-li">
+                <a href="www.facebook.com">
+                  <i class="fa-brands fa-facebook soc-icon"></i>
+                </a>
+              </li>
+              <li class="soc-li">
+                <a href="">
+                  <i class="fa-solid fa-at soc-icon"></i>
+                </a>
+              </li>
+              <li class="soc-li soc-icon">
+                <a href="">
+                  <i class="fa-brands fa-instagram soc-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="nav-icon2" class="nav-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="kozep">
+      <div class="hambi-container">
+        <div class="language-container">
+          <select id="language-select">
+            <option value="en">HU</option>
+            <option value="hu">ENG</option>
+          </select>
+        </div>
+        <div class="line line1"></div>
+        <ul class="list">
+          <li><a href="../hu/homeHU.html">Home</a></li>
+          <li class="hambi-dropdown__menu" id="projektek-menu">
+            <button onclick="handleDropdownClicked(event)">
+              Projektek
+              <span
+                id="dropdown-icon-projektek"
+                class="material-symbols-outlined"
+              >
+                expand_more
+              </span>
+            </button>
+            <section class="dropdown__menu-labels">
+              <button>Projekt1</button>
+              <button>Projekt2</button>
+              <button>Projekt3</button>
+              <button>Projekt4</button>
+              <button>Projekt5</button>
+            </section>
+          </li>
+          <li class="hambi-dropdown__menu" id="blog-menu">
+            <button onclick="handleDropdownClicked(event)">
+              Blog
+              <span id="dropdown-icon-blog" class="material-symbols-outlined">
+                expand_more
+              </span>
+            </button>
+            <section class="dropdown__menu-labels">
+              <button>blog1</button>
+              <button>blog2</button>
+              <button>blog3</button>
+            </section>
+          </li>
+          <li class="hambi-dropdown__menu" id="portfolio-menu">
+            <button onclick="handleDropdownClicked(event)">
+              Portfolio
+              <span
+                id="dropdown-icon-portfolio"
+                class="material-symbols-outlined"
+              >
+                expand_more
+              </span>
+            </button>
+            <section class="dropdown__menu-labels">
+              <button>Portfolio1</button>
+              <button>Portfolio2</button>
+              <button>Portfolio3</button>
+            </section>
+          </li>
+          <li><a href="../hu/contact.html">Kapcsolat</a></li>
+        </ul>
+        <div class="line"></div>
+        <div class="soc-icons">
+          <ul class="soc-ul">
+            <li class="soc-li">
+              <a href="www.facebook.com">
+                <i class="fa-brands fa-facebook soc-icon"></i>
+              </a>
+            </li>
+            <li class="soc-li">
+              <a href="">
+                <i class="fa-solid fa-at soc-icon"></i>
+              </a>
+            </li>
+            <li class="soc-li soc-icon">
+              <a href="">
+                <i class="fa-brands fa-instagram soc-icon"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="project-page__section">
+        <h1 class="project-page__h1">Projektek</h1>
+        <!--TODO:szovegek kitoltese-->
+        <p class="project-page__p">
+          A data science és a szoftverfejlesztés széles palettáján mozgunk. NLP,
+          computer vision, time series, recommendation systems, data-driven
+          business development, big data és cloud megoldásokat fejlesztettünk az
+          eddigi éveink alatt. Valós piaci megoldásokat szállítunk (MLOps).
+          Nyitottak vagyunk együttműködésre, közös termék fejlesztésére,
+          finanszírozás keresésére. Data scientistek és szoftverfejlesztők
+          kiajálásával is foglalkozunk.
+        </p>
+        <!------------------------------------PROJECT CARDS------------------------------------------------------------>
+        <!--project-1-->
+        <!--TODO: img alt megadasa-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2" id="project-page__h2js">
+            Tüdőrák diagnosztika mesterséges intelligencia segítségével
+          </h2>
+
+          <img
+            src="../assets/projects/project_1.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            Tüdőrák detektálása radiológiai felvételeken. Együttműködés kutató
+            orvosokkal és kórházakkal. Kulcsszavak: tüdőrák szegmentálás,
+            rákdiagnosztika, radiológia, computer vision
+          </p>
+        </div>
+        <!--project-2-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">
+            Okos épület projekt gépi tanuló algoritmussal
+          </h2>
+          <img
+            src="../assets/projects/project_2.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            Manapság már léteznek olyan jól felszerelt épületek, ahol számos
+            különböző adat mentésre kerül. Gépi tanuló algoritmussal
+            mintázatokat kerestünk a felhasználói tevékenységekben és növeltük
+            az energiahatékonyságot. Kulcsszavak: smart building, gépi tanulás,
+            time series forecasting, gRPC, docker
+          </p>
+        </div>
+        <!--project-3-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">
+            Gyűlöletbeszéd detektálása az interneten
+          </h2>
+          <img
+            src="../assets/projects/project_3.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            Az online gyűlöletbeszéd rendkívül veszélyes, ugyanis a gyűlölet
+            akár tettlegességig is fajulhat bizonyos esetekben, máskor viszont
+            komoly pszichés deformációkat okozhat a gyűlöletbeszédet
+            elszenvedőkben. Létrehoztunk egy olyan mesterséges intelligencia
+            alapú algoritmust, amely képes magyar szövegekben azonosítani a
+            gyűlöletbeszédet, származzon az a szöveg akár social media
+            platformokról, hírekből vagy blogokról. Kulcsszavak: online
+            gyűlöletbeszéd detektálás, gépi tanulás, neurális háló, NLP (Natural
+            Language Processing)
+          </p>
+        </div>
+        <!--project-4-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">
+            Ügyfelek lemorzsolódását előrejelző algoritmus
+          </h2>
+          <img
+            src="../assets/projects/project_4.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            Egy felhasználót megszerezni sok pénzbe kerül, ezért nagyon fontos a
+            megtartásuk. Ha időben tudja a cég, hogy kik azok, akik várhatóan le
+            fognak morzsolódni, akkor ezeket a felhasználókat még időben meg
+            tudják keresni és a számukra megfelelő lehetőséget ajánlani. Nem
+            csupán egy priorizált lista a cél ebben az esetben, hanem annak
+            megmutatása, hogy milyen tényezők játszanak szerepet a
+            lemorzsolódásban, valamint azt, hogy mikor szükséges beavatkozni a
+            folyamatba. Kulcsszavak: Marketing, churn, gépi tanulás,
+            adatvizualizáció
+          </p>
+        </div>
+        <!--project-5-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">Szélerőmű meghibásodás előrejelzés</h2>
+          <img
+            src="../assets/projects/project_5.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            Szenzorok adataiból szélerőműveknek előrejeleztük és osztályoztuk a
+            várható meghibásodását. Kulcsszavak: Ipar, szélerőmű, neurális háló,
+            hyperparameter tuning Kulcsszavak: NLP (Natural Language Procesing),
+            gépi tanulás, neurális hálók, ajánlórendszerek, REST API
+          </p>
+        </div>
+        <!--project-6-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">
+            Ajánlórendszer fejlesztése HR tevékenységhez
+          </h2>
+          <img
+            src="../assets/projects/project_6.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            Szabadúszók számára algoritmusunk képes kiválasztani a számukra
+            legvonzóbb, legrelevánsabb projekteket. Emellett a projektek kiírói
+            számára megmutatjuk a számukra legmegfelelőbb szabadúszó, vállalkozó
+            szakembert. Kulcsszavak: NLP (Natural Language Procesing), gépi
+            tanulás, neurális hálók, ajánlórendszerek, REST API Kulcsszavak:
+            dinamikus árazás, gépi tanulás
+          </p>
+        </div>
+        <!--project-7-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">Dinamikus árképzés</h2>
+          <img
+            src="../assets/projects/project_7.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            Ügyfelünknek olyan előfizetési modellje van, amelyben a felhasználók
+            maguk rakhatják össze csomagjaikat preferenciáik szerint. Ezen
+            csomagok árai a felhasználó várható üzleti hasznával arányosan
+            kerülnek kikalkulálásra mesterséges intelligencia segítségével.
+            Kulcsszavak: dinamikus árazás, gépi tanulás Kulcsszavak: marketing,
+            gépi tanulás
+          </p>
+        </div>
+        <!--project-8-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">Ki fog várhatóan előfizetni</h2>
+          <img
+            src="../assets/projects/project_8.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            Érdemes figyelembe vennie a marketingnek, hogy az adott látogatók
+            mit tudnak már a cégről, hányadszor járnak az oldalon, milyen korább
+            tevékenységeik voltak. Ha ezek a fenti információk rendelkezésre
+            állnak, már célirányos marketinget lehet folytatni és lehet a
+            konverziót javítani. Egyik korábbi munkánkban a fentebbi kérdésekre
+            kerestük és találtuk meg a válaszokat. Kulcsszavak: marketing, gépi
+            tanulás
+          </p>
+        </div>
+        <!--project-9-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">Ügyfélajánló rendszer</h2>
+          <img
+            src="../assets/projects/project_9.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            Bármilyen is a gazdasági helyzet, minden profitorientált vállalat
+            ügyfeleket szeretne. Saját termékünk ügyfeleinknek ajánl új
+            vásárlókat B2B (business to business) szektorban. Kulcsszavak: NLP
+            (Natural Language Processing), gépi tanulás Kulcsszavak: machine
+            learning, adatvizualizáció
+          </p>
+        </div>
+        <!--project-10-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">
+            Használtautó adatbázis tisztítása gépi tanuló algoritmussal
+          </h2>
+          <img
+            src="../assets/projects/project_10.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            A használtautó kereskedők gyakran helytelen adatokat visznek fel
+            egy-egy autóhoz az adatbázisban, például az autó típusa,
+            hengerűrtartalma, ajtók száma. Ezeket a bejegyzéseket kézzel évekig
+            tartana javítani emberi erőforrással. A hibás adatok detektálása és
+            javítása mellett adatvizualizációval megmutattuk azt is, hogy a
+            különböző hibák milyen esetekben és milyen gyakorisággal fordulnak
+            elő. Kulcsszavak: machine learning, adatvizualizáció
+          </p>
+        </div>
+        <!--projecct-11-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">
+            Pályázatbeadást megkönnyítő félautomata rendszer fejlesztés
+          </h2>
+          <img
+            src="../assets/projects/project_11.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            A pályázatoknál különböző dokumentumokat kell benyújtani a sikeres
+            pályázáshoz. Algoritmusunk képes megkönnyíteni a pályázatírók
+            munkáját, ugyanis kigyűjtjük számukra gépi tanuló algoritmusok
+            segítségével a kitöltendő dokumentumok listáját akár scannelt
+            pdf-ekből is. Emellett akár egyedi dokumentum sablonokat is képes
+            azonosítani és bizonyos elemeit automatikusan kitölteni a pályázó
+            adataival. Nem csupán tanuló rendszer fejlesztése volt a feladatunk,
+            hanem egy webes felület elkészítése is. Kulcsszavak: NLP (Natural
+            Language Processing), gépi tanulás, neurális hálók, REST API,
+            webfejlesztés, UI Kulcsszavak: machine learning, adatvizualizáció
+          </p>
+        </div>
+        <!--project-12-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">
+            Ügyfélszolgálatosok munkájának megkönnyítése
+          </h2>
+          <img
+            src="../assets/projects/project_12.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            Algoritmusaink segítségével az ügyfélszolgálatosok munkáját
+            olyannyira meg tudtuk gyorsítani, hogy kétszer gyorsabban végzik és
+            nagyobb pontosággal a munkájukat a gépi ajánlásoknak köszönhetően.
+            Kulcsszavak: NLP (Natural Language Procesing), gépi tanulás,
+            neurális hálók, RESTAPI Kulcsszavak: NLP (Natural Language
+            Processing), gépi tanulás, neurális hálók, REST API, webfejlesztés,
+            UI
+          </p>
+        </div>
+        <!--project-13-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">Csalásdetektálás</h2>
+          <img
+            src="../assets/projects/project_13.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            Ügyfelünknél problémát okozott, hogy az alkalmazottak visszaéltek a
+            helyzetek adta lehetőséggel és titokban nem valós fogyasztási
+            adatokat írtak az adminisztrációba, ezzel megkárosítva a céget.
+            Utóbbi tevékenységeket jeleztük elő gépi tanuló algoritmussal.
+            Kulcsszavak: idősor előrejelzés, csalásdetektálás, neurális hálók
+            Kulcsszavak: machine learning, adatvizualizáció
+          </p>
+        </div>
+        <!--project-14-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">
+            Tőzsdei árfolyammozgás előrejelző rendszer
+          </h2>
+          <img
+            src="../assets/projects/project_14.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            10 éve foglalkozunk ezzel a területtel, sok évig hobby csapatban
+            fejlesztettünk automata tőzsdei robotokat. Kulcsszavak: tőzsde,
+            idősor előrejelzés, gépi tanulás, neurális hálózatok, stock, crypto
+          </p>
+        </div>
+        <!--project-15-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">
+            Streamelt videókból a legjobb jelenetek felismerése
+          </h2>
+          <img
+            src="../assets/projects/project_15.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            Ügyfelünknek játékfejlesztő cége van, a felhasználói Youtube-on
+            szoktak streamelni, miközben játszanak. Ezek általában 4-5 órás
+            videók. A feladatunk az volt, hogy találjuk meg a videó kommentjei
+            alapján azokat a jeleneteket, amelyek a legjobbak voltak a videóban
+            azért, hogy azokból egy 2-3 perces videót tudjon összevágni
+            ügyfelünk. Kulcsszavak: videó, stream, youtube, komment
+          </p>
+        </div>
+        <!--project-16-->
+        <div class="project-page__card">
+          <h2 class="project-page__h2">Cikk ajánlórendszer</h2>
+          <img
+            src="../assets/projects/project_16.png"
+            alt=""
+            class="project-page__img"
+          />
+          <div class="project-cards__line"></div>
+          <p class="project-page__card-p">
+            A felhasználók számára cikkek ajánlása annak alapján, amiket a
+            felhasználó már megnyitott, elolvasott, esetleg értékelt.
+            Kulcsszavak: Ajánlórendszer, gépi tanulás
+          </p>
+        </div>
+      </section>
+    </main>
+    <div class="footer-line"></div>
+    <!---------------------------------------------FOOTER--------------------------------------------------->
+    <footer class="first-page__footer">
+      <h4 class="footer-h4">Data Science Europe</h4>
+      <p class="footer-contact__p">Contact</p>
+      <p>
+        <a href="mailto:vonalzo@gmail.com"
+          >gerzson.boros@datascienceeurope.ai</a
+        >
+      </p>
+      <p class="footer-follow__p">Follow</p>
+      <p class="footer-subscribe__p">
+        Iratkozz fel a Data Science hírlevelünkre
+      </p>
+      <!--TODO INPUT MUKODESENEK MEGCSINALASA,touch-->
+      <div class="footer-input__container">
+        <form
+          action="https://formspree.io/f/xleqoqvp"
+          method="POST"
+          class="footer-form"
+        >
+          <input
+            name="email"
+            type="email"
+            class="footer-input"
+            placeholder="Enter your email"
+            id="emailInput"
+            required
+          />
+          <button class="footer-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-soc__container">
+        <div class="linkedin-icon__div">
+          <!--TODO: ikonok,img,alt,link-->
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-linkedin__link"><a href="#">LinkedIn</a></div>
+        <div class="facebook-icon__div">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="footer-fb__link">
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+    </footer>
+    <!--bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/buttons.js"></script>
+  </body>
+</html>

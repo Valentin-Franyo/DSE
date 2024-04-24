@@ -1,0 +1,62 @@
+@import url(./baseHU.css);
+@import url(./navbarHU.css);
+@import url(../scss/component.css);
+@import url(./footerHU.css);
+
+@media only screen and (max-width: 575px) {
+   
+    .project-page__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+   }
+   
+    h1 {
+        color: var(--sarga);
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 7rem;
+    }
+
+    .project-page__p {
+        color: var(--feher);
+        text-align: center;
+    }
+    /*project kartyak*/
+    .project-page__card {
+        text-align: center;
+        border: 3px solid var(--fekete);
+        border-radius: 10px;
+        margin:1rem 0;
+        padding: 1rem;
+        background-color: var(--szurke1);
+    }
+
+    /*project cimek*/
+    .project-page__h2 {
+        color: var(--sarga);
+        text-align: center;
+    }
+
+    /*kepek*/
+    .project-page__card img {
+        border-radius: 10px;
+        margin: 1rem;
+        width: 50%;
+        height: auto;
+    }
+
+    /*vonal*/
+    .project-cards__line {
+        height: 2px;
+        width: calc(90% - 10px);
+        background-color: var(--kek);
+        margin: 1rem;
+    }
+
+    .project-page__card-p{
+        color: var(--feher);
+    }
+}

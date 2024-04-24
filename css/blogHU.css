@@ -1,0 +1,138 @@
+@import url(../css/baseHU.css);
+@import url(../css/navbarHU.css);
+@import url(../scss/component.scss);
+@import url(../css/footerHU.css);
+/*mobil*/
+@media only screen and (max-width: 575px) {
+    h1 {
+        color: var(--sarga);
+        text-align: center;
+        margin-top: 6rem;
+        font-size: 3rem;
+     }
+
+    .blog-container {
+        margin-top: 6rem;
+     }
+
+
+    .carousel-inner {
+      overflow: visible;
+      width: calc(100% - 2rem);
+        }
+
+    .card-blog {
+        border: 3px solid var(--sarga);
+        border-radius: 10px;
+        background-color: var(--szurke1);
+        height: auto; /* Példa méret a szürke konténernek */
+        width: 90%; /* Példa szélesség a szürke konténernek */
+        margin: 2rem auto; /* A konténer középre igazítása */
+        position: relative; /* Relatív pozícionálás a tartalom igazításához */
+        overflow: visible; /* Csak a konténeren belül látható részek jelennek meg */
+    }
+
+    .card-body {
+      margin-top: -6rem;
+    
+    }
+    /*blog kepe*/
+    .blog-img {
+        position: relative; /* Módosítás: relatív pozíció */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%; /* Módosítás: relatív szélesség */
+        max-width: 100%; /* Módosítás: relatív maximális szélesség */
+        border: 3px solid var(--kek);
+        border-radius: 10px;
+    }
+    /*blog cim*/
+    .card-title {
+        color: var(--kek);
+       
+    }
+
+    .blog-bejegyzes {
+        display: flex;
+        justify-content: space-between; /* Elemek elosztása az elérhető területen belül */
+        align-items: center; /* Elemek függőleges középre igazítása */
+        padding: 1rem;
+      }
+    /*blog bejegyzes*/
+    .card-blog p {
+        margin: 2rem;
+        position: relative; /* Relatív pozícionálás a tartalom igazításához */
+        z-index: 1; /* A szöveg a kép alatt jelenjen meg */
+    }
+    /*bejegyzes,tovbb olvas gomb,cim*/
+    .card-blog p,
+    .card-blog .blog-btn,
+    .card-title {
+        text-align: center; /* Módosítás: szöveg középre igazítása */
+    }
+
+    .blog-btn {
+        width: 80%; /* Példa: a gomb szélessége 80%-os a szülő elemhez viszonyítva */
+        display: block; /* Módosítás: gomb blokk elemmé alakítása */
+        margin: 0 auto; /* Módosítás: gomb középre igazítása */
+      
+    }
+
+    /*blog iro kepe*/
+    .blog1-admin {
+        width: 15%;
+        height: auto;
+        border: 3px solid var(--sarga);
+        border-radius: 50%;
+      }
+
+      .blog-date {
+        color: var(--kek);
+        text-align: right;
+      }
+      
+    .card-text {
+        color: var(--sarga); 
+    }
+  
+    /*blog feltolto neve,datum*/
+    .admin-text {
+        color: var(--kek);
+        font-size: 90%;
+        margin-right: auto; /* A "Bye Bertha Dougless" és a dátum jobbra igazítása */
+      }
+      .admin-text__p {
+        margin-left: auto; /* A dátum jobbra igazítása */
+      }
+
+   
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        z-index: 1; /* A nyílak a kép felett legyenek */
+        cursor: pointer;
+     
+       
+    }
+    
+    .carousel-control-prev {
+        left: 10px;
+      
+    }
+    
+    .carousel-control-next {
+        right: 10px;
+    }
+
+    
+    
+.first-age__footer{
+
+}
+
+}

@@ -1,0 +1,672 @@
+@import url(./baseHU.css);
+@import url(./navbarHU.css);
+@import url(../scss/component.css);
+@import url(./footerHU.css);
+/*mobil*/
+
+@media only screen and (max-width: 575px) {
+
+main {
+    margin-top: 7rem;
+}
+/*elso szoveg container*/
+.first-wort__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0 1rem;
+  }
+  
+h1,
+.h1-span {
+    color: var(--feher);
+    font-size: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.h1-span {
+    color: var(--sarga);
+    font-size: 2.5rem;
+    margin-top: 0.4rem;
+}
+
+/*elso h2*/
+.first-wort__text{
+    color: var(--sarga);
+}
+
+.first-wort__h3{
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--kiegeszito);
+}
+
+/*handshake img*/
+.handshake-img {
+
+
+}
+.handshake {
+    width: 90%;
+    height:auto ;
+    margin: calc((100% - 90%) / 2);
+    border-radius: 30px; 
+}
+
+/*gomb*/
+.first-text__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+/*elso idezet*/
+.quote-card__first {
+    color: var(--feher);
+    border: 3px solid var(--kek);
+    border-radius: 10px;
+    padding: 1rem;
+}
+/*idezet vonal*/
+.quote-line {
+    height: 2px;
+    width: calc(90% - 10px);
+    background-color: var(--sarga);
+    margin: 1rem;
+}
+
+.first-quote__text {
+    color: var(--sarga);
+    font-size: 0.8rem;
+    text-align: end;
+}
+
+/* first hexagon section*/
+.hexagon-cards {
+    display: flex;
+    justify-content: center; /* A kártyákat középre igazítja a konténerben */
+    flex-wrap: wrap; /* Ha elfogy a hely, a kártyák új sorba fognak kerülni */
+    margin: 0 1rem; /* Oldalt 1rem margó a konténer körül */
+}
+/*hexagon kartyak*/
+.hexagon-card {
+    width: calc(50% - 30px); /* Kisebb méret a széles margin miatt */
+    margin: 0 15px 20px; /* Oldalirányú margó és alul margó */
+    border: 3px solid var(--fekete);
+    background-color: var(--szurke3);
+    border-radius: 10px;
+}
+
+
+
+/*hatszog*/
+.hexagon {
+    position: relative;
+    width: 60px; /* Átméretezheted igényeid szerint */
+    height: 34.64px; /* Átméretezheted igényeid szerint */
+    background-color: var(--szurke1); /* Szín igény szerint */
+    margin: 17.32px auto; /* Középre igazítás */
+    margin-top: 2rem;
+  }
+  
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 17.32px solid var(--szurke1); /* Szín igény szerint */
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 17.32px solid var(--szurke1); /* Szín igény szerint */
+}
+/*hatszogben a szamok*/
+.hexagon span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--sarga);
+}
+
+/*hosszabb szoveg*/
+.hexagon-card__text {
+    color: var(--feher);
+    text-align: center;
+    padding: 1rem;
+    margin: 0 1rem; /* Balra és jobbra 1rem margó */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word; /* A szöveg tördelése, ha túl hosszú */
+    font-size: 3.5vw; /* Alapértelmezett betűméret */
+}
+
+/*csapat */
+.team-container {
+    margin: 1rem 1.5rem; /* 1rem felül és alul, 1.5rem balra és jobbra */
+}
+
+.ai-h2 {
+    font-size: 5vw;
+    
+}
+
+.ai-h2__first {
+    color: var(--sarga);
+    margin: auto; /* Középre igazított margó */
+}
+
+.ai-h2__second {
+    color: var(--feher);
+    margin: auto;
+}
+
+.ai-h2__third {
+    color: var(--sarga);
+    margin: auto;
+}
+
+/*masodik kep,data1 img*/
+ .data1-img {
+    width: 90%;
+    height:auto ;
+    margin: calc((100% - 90%) / 2);
+    border-radius: 30px; 
+ }
+
+ /*miert erdemes minket valasztani*/
+ .why {
+    border: 3px solid var(--szurke1);
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1.5rem;
+    background-color: var(--szurke1);
+}
+  .why-2{
+    color: var(--sarga);
+    font-size: 4vw; 
+  }
+
+ .why-1,
+ .why-3 {
+    color: var(--feher);
+    font-size: 4vw;
+    
+   
+ }
+/*cimek szakosodas stb*/
+ .why-h2{
+    margin:1rem 0;
+    color: var(--sarga);
+    letter-spacing: 2px;
+ }
+ .specialization-container{
+    margin-top: 1rem;  
+ }
+
+ .team-ai__p{
+    color: var(--feher);
+    letter-spacing: 2px;
+ }
+
+ /*masodik gomb*/
+ .why-section__btn {
+    margin: 1rem 0;
+ }
+}
+
+/*meeting*/
+.meeting-container{
+    flex-wrap: wrap;
+}
+
+/*meeting listaelemek*/
+.meeting li{
+    font-size: 1.5rem;
+    color: var(--sarga);
+    margin: 1rem 0;
+    list-style:disc;
+}
+
+.meeting-text {
+    color: var(--feher);
+    text-align: center;
+    margin: 0 1rem;
+    letter-spacing: 2px;
+}
+
+/*szolgaltatasok*/
+.services-first__page {
+    flex-wrap:wrap;
+    margin: 1.5rem;
+    border: 3px solid var(--kek);
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: var(--szurke3);
+}
+
+/*szolgaltatasok cim*/
+.services-first__page-h2 {
+    color: var(--sarga);
+    letter-spacing: 2px;
+    font-size: 1.7rem; 
+   
+}
+/*szolgaltatas leiro szoveg*/
+.services-first__page-p {
+    color: var(--feher);
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/*szolgaltatasok kartyak*/
+
+/*kartya kontener*/
+.services-container__first-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;  
+}
+
+/*kartyak*/
+.services-card {
+    width: calc(50% - 5px); /* 50% - 5px, hogy két kártya elférjen egymás mellett */
+    margin-bottom: 20px; /* Térköz a kártyák között */
+    border: 3px solid black; /* 3px fekete keret */
+    background-color: var(--szurke3);
+    border-radius: 10px;
+    box-sizing: border-box; /* A margin is számítson a kártya szélességébe */
+
+}
+
+
+/*hatszog*/
+.services-hexagon {
+    position: relative;
+    width: 60px; /* Átméretezheted igényeid szerint */
+    height: 34.64px; /* Átméretezheted igényeid szerint */
+    background-color: var(--sarga); /* Szín igény szerint */
+    margin: 17.32px auto; /* Középre igazítás */
+    margin-top: 2rem;
+}
+
+.services-hexagon:before,
+.services-hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+.services-hexagon:before {
+  bottom: 100%;
+  border-bottom: 17.32px solid var(--sarga); /* Szín igény szerint */
+}
+
+.services-hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 17.32px solid var(--sarga); /* Szín igény szerint */
+}
+
+
+/*kartyaba az ikon*/
+.services-icon{
+    width: 35px;
+    height: auto;
+}
+
+.services-line {
+    height: 2px;
+    width: calc(90% -10px);
+    background-color: var(--sarga);
+    margin: 1rem;
+}
+
+/*katyakban levo szoveg*/
+.services-text {
+    text-shadow: 3px 3px 3px var(--fekete);
+     
+}
+
+.services-card p{
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+.services-text,
+.services-card p {
+    color: var(--feher);
+    text-align: center;
+    padding: 0.5rem;
+    max-width: calc(100% - 10px);; /* A konténer szélességéből levonjuk a paddingot */
+    margin: auto; /* Középre igazítás */
+    overflow-wrap: break-word;
+    hyphens: auto; 
+}
+
+/*-----------masodik idezet----------*/
+.quote-card__second {
+    color: var(--feher);
+    border: 3px solid var(--feher);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.second-quote__text {
+    color: var(--sarga);
+    font-size: 0.8rem;
+    text-align: end;
+}
+
+/*---------------TERULETEK--------------------*/
+.area-first__page {
+   border: 3px solid var(--sarga);
+   border-radius: 10px;
+   flex-direction: column;
+   padding: 1rem 0;
+   gap: 1.5rem;
+   margin: 1rem;
+}
+
+/*teruletek cim*/
+.area-h2 {
+    color: var(--sarga);
+}
+/*teruletek gombok*/
+.area-first__page button {
+    font-size: 0.8rem;
+    cursor: pointer;
+    border: 2px solid var(--sarga);
+    background-color: var(--szurke1);
+    color: var(--feher);
+    border-radius: 10px;
+    padding: 0.5rem 2.5rem;
+    width: 85%;
+}
+
+/*idezet 3*/
+.quote-third {
+    border: 3px solid var(--sarga);
+    border-radius: 10px;
+    padding: 1rem;
+    color: var(--feher);
+}
+/*idezet 3 szoveg*/
+.third-quote__text {
+    color: var(--sarga);
+    font-size: 0.8rem;
+    text-align: end;
+}
+
+/*PROJEKTEK section*/
+.first-page__projects {
+    flex-wrap:wrap;
+    border: 3px solid var(--feher);
+    border-radius: 10px;
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.first-page__projects h2  {
+    color: var(--sarga);
+    margin-bottom: 2rem;
+}
+
+.first-page__projects  h3 {
+    color: var(--sarga);
+    text-align: center;
+}
+
+/*projektek vonal*/
+.project-line {
+    height: 2px;
+    width: calc(90% - 10px);
+    background-color: var(--kek);
+    margin: 1rem;
+}
+
+/* projektek bekezdesek*/
+.first-page__projects p {
+    color: var(--feher);
+    margin: 1rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/*tovabbi projektek gomb*/
+.project-section__btn {
+    font-size: 1.5rem;
+    color: var(--fekete);
+    background-color: var(--sarga);
+    width: 90%;
+    border: 1px solid var(--fekete);
+    border-radius: 10px;
+    padding: 0.5rem 0.5rem;
+}
+  
+/*PARTNEREK section*/
+.first-page__partners h2{
+    font-size: 2rem;
+    color: var(--sarga);
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.first-page__partner-p {
+    margin: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--feher);
+}
+
+.first-page__partner-p strong  {
+    color: var(--sarga);
+}
+/*tovabbi partner btn*/
+.tovabbi-partner__btn {
+    border: 3px solid var(--kek);
+    border-radius: 10px;
+    background-color:transparent;
+    color: var(--sarga);
+    width: 60%;
+    padding: .5rem 0;
+    cursor: pointer;
+}
+
+/*-----------NOVEKEDES SECTION---------------*/
+.first-page__growth {
+    margin: 2rem;
+    border: 3px solid black var(--sarga);
+    flex-direction: column;
+    padding: 1rem;
+    border: 3px solid var(--sarga);
+    border-radius: 10px;
+}
+/*novekedes cim*/
+.first-page__growth h2 {
+    color: var(--sarga);
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+
+/*novekedes leirasok*/
+.first-page__growth-p {
+    color: var(--feher);
+    text-align: center;
+}
+
+.first-page__growth-line {
+    height: 2px;
+    width: 40%;
+    background-color: var(--kek);
+    margin: 1rem;
+}
+
+/*novekedes container*/
+
+/*megtalalhato benne:ikonok,p*/
+.growth-container{
+    margin: -2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5rem;
+}
+
+.growth-container__p {
+    font-size: 1.5rem;
+    color: var(--sarga);
+    position: relative; /* Állítsuk be az abszolút pozícióhoz szükséges relatív pozíciót */
+    top: 90px; /* A hexagon alatti helyzet állítása */
+    margin-top:2rem ;
+}
+
+/*novekedes hatszog*/
+.growth-hexagon {
+    position: relative;
+    width: 60px; /* Átméretezheted igényeid szerint */
+    height: 34.64px; /* Átméretezheted igényeid szerint */
+    background-color: var(--sarga); /* Szín igény szerint */
+    margin:3rem auto; /* Középre igazítás */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Középre igazítás */
+    align-items: center; /* Középre igazítás */
+}
+
+/*hatszogben a kepek*/
+.growth-hexagon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px; /* Kép szélessége */
+    height: auto; /* Automatikus magasság */
+}
+
+
+.growth-hexagon:before,
+.growth-hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+.growth-hexagon:before {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 17.32px solid var(--sarga); /* Szín igény szerint */
+}
+
+.growth-hexagon:after {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  border-top: 17.32px solid var(--sarga); /* Szín igény szerint */
+}
+
+/*gomb konzultacio*/
+.kunzoltacio-btn {
+    width: 95%; /* A gomb szélességét a konténer 95%-ára állítjuk */
+    max-width: 100%; /* A gomb maximális szélességét a konténer szélességére állítjuk */
+    margin-top: 8rem;
+}
+
+/*ARAINK SECTION*/
+.price-h2 {
+    color: var(--sarga);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.price-p {
+    color: var(--feher);
+    text-align: center;
+    margin: 1.5rem;
+}
+
+/*MEDIOR SECTION*/
+.medior {
+    text-align: center;
+    border: 3px solid var(--kek);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.first-page__medior-h2 {
+    color: var(--sarga);
+}
+
+.first-page__medior-h3 {
+    color: var(--feher);
+}
+
+.first-page__medior-line {
+    height: 2px;
+    width: 90%;
+    background-color: var(--kek);
+    margin: 1rem;
+}
+/*sassba flexbox*/
+.medior-price__container {
+}
+
+.medior-price {
+    color: var(--sarga);
+}
+
+.medior-price__hour {
+    color: var(--kek);
+}
+
+.medior-price__text {
+    color: var(--feher);
+}
+
+/*DO IT SECTION*/
+.do-it{
+    color:var(--sarga);
+    text-align: center;
+    margin: 1rem;
+}
+
+.kapcsolat-btn {
+    color: var(--kek);
+    width: 90%;
+    margin: 2rem 0;
+}
+/*utolso kep*/
+.data-img__1 {
+    width: 90%;
+    height:auto ;
+    margin: calc((100% - 90%) / 2);
+    border-radius: 30px;  
+}
+
+

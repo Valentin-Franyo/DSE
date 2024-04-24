@@ -1,0 +1,135 @@
+@mixin margin {
+    margin: 2rem;
+}
+
+@mixin flexbox-kozep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btn1 {
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: var(--sarga);
+    font-weight:bold;
+    width: 70%;
+    font-size: 1rem;
+    border: 2px solid var(--fekete);
+    text-shadow: 3px 3px 15px;
+}
+
+@mixin tovabbi-projektek__btn {
+
+}
+
+.handshake {
+    @include flexbox-kozep()
+}
+
+
+.btn-primary {
+    @include btn1()
+}
+
+.quote-card__first {
+   @include margin()
+}
+
+.hexagon-cards {
+    @include margin()
+}
+
+.team-container {
+    @include flexbox-kozep()
+}
+
+.why {
+    @include flexbox-kozep()
+}
+
+.why-section__btn {
+    @include flexbox-kozep()
+}
+
+.meeting-container {
+    @include flexbox-kozep()
+}
+
+.services-first__page {
+    @include flexbox-kozep()
+}
+
+
+.services-hexagon {
+    @include flexbox-kozep()
+}
+/*idezet 2*/
+.quote-card__second {
+    @include margin()
+}
+/*teruletek*/
+.area-first__page{
+    @include flexbox-kozep()
+}
+
+.area-first__page {
+    
+}
+/*idezet 3*/
+.quote-third {
+    @include margin()
+}
+
+/*PROJEKTEK section*/
+.first-page__projects {
+    @include flexbox-kozep()
+}
+
+.project-section__btn {
+    @include flexbox-kozep()
+}
+
+/*PARTNEREK section*/
+.partner-btn{
+    @include flexbox-kozep()
+}
+
+/*NOVEKEDES SECTION*/
+.first-page__growth-container {
+    @include flexbox-kozep()
+}
+
+.first-page__growth {
+    @include flexbox-kozep()
+}
+
+.growth-container {
+    @include margin()
+}
+
+.price-section__btn {
+   @include flexbox-kozep()
+}
+
+.medior {
+    @include margin()
+}
+
+/*medior arazas ora+afa*/
+.medior-price__container  {
+    @include flexbox-kozep()
+}
+
+.do-it__btn {
+    @include flexbox-kozep()
+}
+
+/*FOOTER*/
+.first-page__footer {
+    @include flexbox-kozep()
+}
+
+.footer-soc__container {
+    @include flexbox-kozep()
+}

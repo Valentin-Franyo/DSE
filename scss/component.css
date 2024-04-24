@@ -1,0 +1,150 @@
+.handshake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: var(--sarga);
+  font-weight: bold;
+  width: 70%;
+  font-size: 1rem;
+  border: 2px solid var(--fekete);
+  text-shadow: 3px 3px 15px;
+}
+
+.quote-card__first {
+  margin: 2rem;
+}
+
+.hexagon-cards {
+  margin: 2rem;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-section__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meeting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-first__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-hexagon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*idezet 2*/
+.quote-card__second {
+  margin: 2rem;
+}
+
+/*teruletek*/
+.area-first__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*idezet 3*/
+.quote-third {
+  margin: 2rem;
+}
+
+/*PROJEKTEK section*/
+.first-page__projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-section__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*PARTNEREK section*/
+.partner-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*NOVEKEDES SECTION*/
+.first-page__growth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-page__growth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.growth-container {
+  margin: 2rem;
+}
+
+.price-section__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medior {
+  margin: 2rem;
+}
+
+/*medior arazas ora+afa*/
+.medior-price__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.do-it__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*FOOTER*/
+.first-page__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-soc__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=component.css.map */

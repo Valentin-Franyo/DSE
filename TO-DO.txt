@@ -1,0 +1,16 @@
+ikonok
+partnerek oldal letrehozasa
+felugro ablak letrehozasa feliratkozasnal
+FAVICON
+home.html nav atmasolasa a tobbi oldalhoz
+letter spacing csinalasa
+hamburgermenut barhol meglehessen nyitni
+mindenhol  hyphens: auto;
+akadalymentesites elleneorzese,kepek alt stb
+buttonokhoz kattintas adas a teruleteknel
+idezetek kisebbre vetele
+azonos betumeretek a cimeknek stb
+soc linkek elhelyezese
+a dropdown-menu osztalyt atirtam hambi-dropdown__menure jsbe es navbar.cssbe hogy mukodjon a bootstrap
+egy kulon tobbi partnerhez html oldal
+

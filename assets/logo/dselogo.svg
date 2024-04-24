@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151.6 76.23">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        font-family: PlayPretend, 'Play Pretend';
+      }
+
+      .cls-1, .cls-3 {
+        font-size: 76.62px;
+      }
+
+      .cls-1, .cls-4, .cls-5 {
+        fill: #1d1d1b;
+      }
+
+      .cls-2 {
+        font-size: 10.59px;
+      }
+
+      .cls-6, .cls-7, .cls-3 {
+        fill: #f9b233;
+      }
+
+      .cls-7, .cls-5 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="D">
+    <text class="cls-1" transform="translate(3.84 61.23) scale(.94) skewX(-20)"><tspan x="0" y="0">D</tspan></text>
+    <text class="cls-2" transform="translate(.92 74.77) scale(.9 .94) skewX(-20)"><tspan class="cls-6" x="0" y="0">d</tspan><tspan class="cls-5" x="7.76" y="0">ata </tspan><tspan class="cls-7" x="33.65" y="0">s</tspan><tspan class="cls-4" x="41.41" y="0">cience </tspan><tspan class="cls-7" x="85.4" y="0">e</tspan><tspan class="cls-4" x="93.16" y="0">urope</tspan></text>
+  </g>
+  <g id="E">
+    <text class="cls-1" transform="translate(74.06 61.23) scale(.94) skewX(-20)"><tspan x="0" y="0">E</tspan></text>
+  </g>
+  <g id="S">
+    <text class="cls-3" transform="translate(38.97 61.21) scale(.94) skewX(-20)"><tspan x="0" y="0">S</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Science Europe</title>
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!---CSS-->
+    <link rel="stylesheet" href="../css/homeHU.css" />
+
+    <!-- Material Symbols Outlined font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!---------------------------------------------------NAV----------------------------------------------------------------------------------------------------------------->
+    <header>
+      <div class="logo-container">
+        <a href="../hu/homeHU.html" class="logo-link">
+          <img class="logo-svg" src="../assets/logo/dselogo.svg" alt="" />
+        </a>
+      </div>
+
+      <div id="nav-icon2" class="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="kozep">
+        <div class="hambi-container">
+          <div class="language-container">
+            <select id="language-select">
+              <option value="en">HU</option>
+              <option value="hu">ENG</option>
+            </select>
+          </div>
+          <div class="line line1"></div>
+          <ul class="list">
+            <li><a href="../hu/homeHU.html">Home</a></li>
+            <li class="hambi-dropdown__menu" id="projektek-menu">
+              <button onclick="handleDropdownClicked(event)">
+                Projektek
+                <span
+                  id="dropdown-icon-projektek"
+                  class="material-symbols-outlined"
+                >
+                  expand_more
+                </span>
+              </button>
+              <section class="dropdown__menu-labels">
+                <button onclick="scrollToProject()">
+                  Tüdőrák diagnosztika
+                </button>
+                <button onclick="Project2">Projekt2</button>
+                <button onclick="Project3">Projekt3</button>
+                <button onclick="ProjectsHU()">Tovabbi projektek</button>
+              </section>
+            </li>
+            <li class="hambi-dropdown__menu" id="blog-menu">
+              <button onclick="handleDropdownClicked(event)">
+                Blog
+                <span id="dropdown-icon-blog" class="material-symbols-outlined">
+                  expand_more
+                </span>
+              </button>
+              <section class="dropdown__menu-labels">
+                <button>blog1</button>
+                <button>blog2</button>
+                <button>blog3</button>
+                <button onclick="BlogHU()">Tovabbi blog</button>
+              </section>
+            </li>
+            <li class="hambi-dropdown__menu" id="portfolio-menu">
+              <button onclick="handleDropdownClicked(event)">
+                Portfolio
+                <span
+                  id="dropdown-icon-portfolio"
+                  class="material-symbols-outlined"
+                >
+                  expand_more
+                </span>
+              </button>
+              <section class="dropdown__menu-labels">
+                <button>Portfolio1</button>
+                <button>Portfolio2</button>
+                <button>Portfolio3</button>
+              </section>
+            </li>
+            <li><a href="../hu/contactHU.html">Kapcsolat</a></li>
+          </ul>
+          <div class="line"></div>
+          <div class="soc-icons">
+            <ul class="soc-ul">
+              <li class="soc-li">
+                <a href="www.facebook.com">
+                  <i class="fa-brands fa-facebook soc-icon"></i>
+                </a>
+              </li>
+              <li class="soc-li">
+                <a href="">
+                  <i class="fa-solid fa-at soc-icon"></i>
+                </a>
+              </li>
+              <li class="soc-li soc-icon">
+                <a href="">
+                  <i class="fa-brands fa-instagram soc-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!----------------------------------MAIN--------------------------------------->
+    <main>
+      <div class="first-wort__container">
+        <h1 class="first-wort">Segítünk,<span class="h1-span">hogy</span></h1>
+        <h2 class="first-wort__text">
+          céged versenyelőnyhöz jusson az AI segítségével!
+        </h2>
+        <h3 class="first-wort__h3">
+          (Egyedi mesterséges intelligencia fejlesztés, tanácsadás, oktatás, AI
+          stratégia KKV-knak!)
+        </h3>
+      </div>
+
+      <!--TODO: kep alt ellenorzes-->
+      <!--elso kep-->
+      <div class="handshake-img">
+        <img
+          src="../assets/img/handshake.jpg"
+          alt="AI and Human handshake"
+          class="handshake"
+        />
+      </div>
+
+      <!--button-->
+      <div class="first-text__btn">
+        <button type="button" class="btn-primary btn btn-warning">
+          Foglalj ingyenes konzultációt
+        </button>
+      </div>
+
+      <!--idezet1-->
+      <div class="quote-card quote-card__first">
+        <div class="quote-card__content quote-card__content__first">
+          <blockquote class="quote-first">
+            "Gerzson remek volt! Megértette, amire szükségünk volt, kiváló a
+            megvalósítástól a riportálásig. Nagyon ajánlom!"
+          </blockquote>
+
+          <div class="first-quote__line quote-line"></div>
+          <!-- Div elem vízszintes vonal helyett -->
+          <p class="first-quote__text quote-text">
+            Jeremy Brooks, CEO of Hideaway Report
+          </p>
+        </div>
+      </div>
+      <!-------------------------------HEXAGON CARDS------------------------------------------------------>
+      <section class="hexagon-cards">
+        <div class="hexagon-card hexagon-card__1">
+          <div class="hexagon">
+            <span class="hexagon-number hexagon-number__1">40+</span>
+          </div>
+          <p class="hexagon-card__text hexagon-card__text1">
+            40+ projekt 15+ országban
+          </p>
+        </div>
+        <div class="hexagon-card hexagon-card__2">
+          <div class="hexagon">
+            <span class="hexagon-number hexagon-number__2">10+</span>
+          </div>
+          <p class="hexagon-card__text hexagon-card__text2">
+            10 év tapasztalat
+            <!--egyedi Mesterséges Intelligencia fejlesztésben-->
+          </p>
+        </div>
+        <div class="hexagon-card hexagon-card__3">
+          <div class="hexagon">
+            <span class="hexagon-number hexagon-number__3">5%</span>
+          </div>
+          <p class="hexagon-card__text hexagon-card__text3">
+            Top 5%-ba tartozó data scientistek
+          </p>
+        </div>
+        <div class="hexagon-card hexagon-card__4">
+          <div class="hexagon">
+            <span class="hexagon-number hexagon-number__4">97%</span>
+          </div>
+          <p class="hexagon-card__text hexagon-card__text4">
+            97%-os sikerráta a projektjeinkben
+          </p>
+        </div>
+      </section>
+      <div class="team-container">
+        <h2 class="ai-h2 ai-h2__first">AI +</h2>
+        <h2 class="ai-h2 ai-h2__second">Egy jó csapat</h2>
+        <h2 class="ai-h2 ai-h2__third">= Növekedés</h2>
+      </div>
+      <!--TODO alt kipotlasa-->
+      <img src="../assets/img/data_1.png" alt="" class="data1-img" />
+      <!----------------------------------------------------MIERT ERDEMES MINKET VALASZTANI----------------------------------------------------->
+      <section class="why">
+        <div class="why-section__first-h2">
+          <span class="why-1">Miért érdemes </span>
+          <span class="why-2">MINKET </span>
+          <span class="why-3">választani?</span>
+        </div>
+        <div class="spacialization-container">
+          <h2 class="specialization why-h2">Szakosodás:</h2>
+          <p class="specialization-text team-ai__p">
+            Kizárólag az adattudománnyal, gépi tanulással és mesterséges
+            intelligenciával foglalkozunk.
+          </p>
+        </div>
+        <div class="education-container">
+          <h2 class="education why-h2">Oktatás:</h2>
+          <p class="education-text team-ai__p">
+            Egyetemi szinten oktatjuk ezeket a területeket, hozzájárulva a
+            következő generációk szaktudásához.
+          </p>
+        </div>
+        <div class="topdata-container">
+          <h2 class="top-data__scientist why-h2">Top Data Scientistek:</h2>
+          <p class="top-data__scientist-text team-ai__p">
+            Csapatunkban olyan kiemelkedő data scientistek találhatók, akik a
+            Kaggle nevű adattudományos platformon a világ legjobbjai közé
+            tartoznak, tehát a szakma top 5%-ába.
+          </p>
+        </div>
+        <div class="portfolio-container">
+          <h2 class="portfolio why-h2">Projektportfólió:</h2>
+          <p class="portfolio-text team-ai__p">
+            Több mint 40 sikeres projektet hajtottunk végre szerte a világon,
+            több mint 20 különböző ügyfél részére.
+          </p>
+        </div>
+        <div class="collaboration-container">
+          <h2 class="collaboration why-h2">Széleskörű együttműködés:</h2>
+          <p class="collaboration-text team-ai__p">
+            Csapatunk nem csak belsőleg erős, hanem külső kapcsolatokban is
+            gazdag. Együtt dolgozunk kutatókkal, matematikusokkal és
+            szoftverfejlesztőkkel is.
+          </p>
+        </div>
+      </section>
+      <!--button-2-->
+      <div class="why-section__btn">
+        <button type="button" class="btn-primary btn btn-warning">
+          Foglalj ingyenes konzultációt
+        </button>
+      </div>
+
+      <div class="meeting-container">
+        <ul class="meeting">
+          <li class="meeting-li">30-60perc</li>
+          <li class="meeting-li">Google Meet</li>
+          <li class="meeting-li">Ingyenes</li>
+        </ul>
+        <p class="meeting-text">
+          Nagy adatmennyiséggel dolgozol, de nem tudod melyik szolgáltatásunkat
+          lenne érdemes kiválaszatani? Egy 30 perces online hívásban segítünk
+          meghatároznielemzési céljaid!
+        </p>
+      </div>
+      <!---------------------SERVICES------------------------------------------>
+      <!--TODO: IKONOK KICSERELESE-->
+      <section class="services-first__page">
+        <h2 class="services-first__page-h2">Szolgáltatások</h2>
+        <p class="services-first__page-p">
+          Kifinomult megoldásainkkal számos területet szolgálunk. Többek között
+          - de nem csak ezekre korlátozva - az alábbiakat:
+        </p>
+        <div class="services-container__first-page">
+          <!--strateegia card-->
+          <div class="services-card services-card__first-page">
+            <div class="services-hexagon services-hexagon__first-page">
+              <img
+                class="services-icon"
+                src="../assets/icon/strategia.png"
+                alt=""
+              />
+            </div>
+            <p class="services-text">Stratégia</p>
+            <div class="services-line__first-page services-line"></div>
+            <p>
+              AI (mesterséges intelligencia) stratégia kidolgozása és annak
+              megvalósítása
+            </p>
+          </div>
+          <!--end to end card-->
+          <div class="services-card services-card__first-page">
+            <div class="services-hexagon services-hexagon__first-page">
+              <img
+                class="services-icon"
+                src="../assets/icon/end_to_end.png"
+                alt=""
+              />
+            </div>
+            <p class="services-text">End-to-End</p>
+            <div class="services-line__first-page services-line"></div>
+            <p>
+              Komplett mesterséges intelligenciával kapcsolatos projektek
+              lemendzselése valamint lefejlesztése A-tól Z-ig
+            </p>
+          </div>
+          <!--ai card-->
+          <div class="services-card services-card__first-page">
+            <div class="services-hexagon services-hexagon__first-page">
+              <img class="services-icon" src="../assets/icon/ai.png" alt="" />
+            </div>
+            <p class="services-text">AI Tanácsadás</p>
+            <div class="services-line__first-page services-line"></div>
+            <p>
+              Ha kérdés számodra, hogy az AI alkalmazható-e nálatok, vagy
+              konkrét kérdésed van
+            </p>
+          </div>
+          <!--tamogatas card-->
+          <div class="services-card services-card__first-page">
+            <div class="services-hexagon services-hexagon__first-page">
+              <img
+                class="services-icon"
+                src="../assets/icon/tamogatas.png"
+                alt=""
+              />
+            </div>
+            <p class="services-text">Támogatás</p>
+            <div class="services-line__first-page services-line"></div>
+            <p>Adatvezérelt stratégia támogatása és fejlesztése</p>
+          </div>
+          <!--gepi latas card-->
+          <div class="services-card services-card__first-page">
+            <div class="services-hexagon services-hexagon__first-page">
+              <img
+                class="services-icon"
+                src="../assets/icon/gepilatas.png"
+                alt=""
+              />
+            </div>
+            <p class="services-text">Gépi látás</p>
+            <div class="services-line__first-page services-line"></div>
+            <p>Kép-videó alapú egyedi AI fejlesztés</p>
+          </div>
+          <!--szoveg card-->
+          <div class="services-card services-card__first-page">
+            <div class="services-hexagon services-hexagon__first-page">
+              <img
+                class="services-icon"
+                src="../assets/icon/szoveg.png"
+                alt=""
+              />
+            </div>
+            <p class="services-text">Szöveg</p>
+            <div class="services-line__first-page services-line"></div>
+            <p>
+              Szöveganalitika, szövegbányászat, Generative AI - LLM-ek, ChatGPT
+              és open source modellek finomhangolása
+            </p>
+          </div>
+          <!--idosorok card-->
+          <div class="services-card services-card__first-page">
+            <div class="services-hexagon services-hexagon__first-page">
+              <img
+                class="services-icon"
+                src="../assets/icon/idosorok.png"
+                alt=""
+              />
+            </div>
+            <p class="services-text">Idősorok</p>
+            <div class="services-line__first-page services-line"></div>
+            <p>
+              Idősor (tőzsdei, egészségügyi, ipari, marketing, stb.) adatok
+              elemzése, predikciója
+            </p>
+          </div>
+          <!--ajanlorendszer card-->
+          <div class="services-card services-card__first-page">
+            <div class="services-hexagon services-hexagon__first-page">
+              <img
+                class="services-icon"
+                src="../assets/icon/ajanlorendszer.png"
+                alt=""
+              />
+            </div>
+            <p class="services-text">Ajánlórendszerek</p>
+            <div class="services-line__first-page services-line"></div>
+            <p>
+              Felhasználói és termékprofilok építése tanuló algoritmusok
+              segítségével
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--idezet 2-->
+      <div class="quote-card quote-card__second">
+        <div class="quote-card__content quote-card__content__second">
+          <blockquote class="quote-second">
+            „Ez az első alkalom, hogy Gerzsonnal dolgozom, de nagyon lenyűgözött
+            a szakértelme és a nagyszerű szolgáltatása. Gyakran kommunikált
+            velem, és rendkívül elégedett vagyok a végeredménnyel.”
+          </blockquote>
+
+          <div class="second-quote__line quote-line"></div>
+          <!-- Div elem vízszintes vonal helyett -->
+          <p class="second-quote__text quote-text">
+            Christopher A. Williams, Co-founder at Boardman & Williams GbR
+          </p>
+        </div>
+      </div>
+      <!---------------------------------TERULETEK------------------------------------>
+      <!--TODO:buttonokhoz kattintas adas-->
+      <section class="area-first__page area">
+        <h2 class="area-h2__first-page area-h2">Területek</h2>
+        <button class="first-page_nlp nlp">NLP</button>
+        <button class="first-page__time-series time-series">Time series</button>
+        <button class="first-page__big-data big-data__solutions">
+          Big data solutions
+        </button>
+        <button class="first-page__cloud cloud-solutions">
+          Cloud solutions
+        </button>
+        <button class="first-page__recommendation recommendation">
+          Recommendation system
+        </button>
+        <button class="first-page__working working">
+          Working for solution(MlOps)
+        </button>
+        <button class="first-page__computer-vision computer-vision">
+          Computer vision
+        </button>
+        <button class="first-page__data-driven data-drive">
+          Data driven business developement
+        </button>
+        <button class="first-page__recruiting recruiting">
+          Recruiting data scientists and devs
+        </button>
+      </section>
+
+      <!--idezet 3-->
+      <div class="quote-card quote-third">
+        <div class="quote-card__content quote-card__content__third">
+          <blockquote class="quote-third__valami">
+            Gerzson és csapata nagyszerű munkát végzett. Több szabadúszó is
+            végezett már hasonló munkát, de Gerzson munkája volt a legjobb.
+            Remélem, hogy a jövőbeli projekteken újra együtt dolgozhatok
+            Gerzsonnal.
+          </blockquote>
+
+          <div class="third-quote__line quote-line"></div>
+          <!-- Div elem vízszintes vonal helyett -->
+          <p class="third-quote__text quote-text">
+            Nathan Black, Chief Data Scientist at QuantHub
+          </p>
+        </div>
+      </div>
+      <!---------------------PROJEKTEK------------------------------->
+      <!--tudo-->
+      <section class="first-page__projects">
+        <h2 class="first-page__projects-h2">Projektek</h2>
+        <h3 class="first-page__lung">
+          Tüdőrák diagnosztika mesterséges intelligencia segítségével
+        </h3>
+        <p class="first-page__lung-p">
+          Tüdőrák detektálása radiológiai felvételeken. Együttműködés kutató
+          orvosokkal és kórházakkal. Kulcsszavak: tüdőrák szegmentálás,
+          rákdiagnosztika, radiológia, computer vision
+        </p>
+        <div class="project-line lung-line"></div>
+        <!--okos epulet-->
+        <h3 class="first-page__smart">
+          Okos épület projekt gépi tanuló algoritmussal
+        </h3>
+        <p class="first-page__smart-p">
+          Manapság már léteznek olyan jól felszerelt épületek, ahol számos
+          különböző adat mentésre kerül. Gépi tanuló algoritmussal mintázatokat
+          kerestünk a felhasználói tevékenységekben és növeltük az
+          energiahatékonyságot. Kulcsszavak: smart building, gépi tanulás, time
+          series forecasting, gRPC, docker
+        </p>
+        <div class="project-line smart-line"></div>
+        <!--gyulolet-->
+        <h3 class="first-page__hate">
+          Gyűlöletbeszéd detektálása az interneten
+        </h3>
+        <p class="first-page__hate-p">
+          Az online gyűlöletbeszéd rendkívül veszélyes, ugyanis a gyűlölet akár
+          tettlegességig is fajulhat bizonyos esetekben, máskor viszont komoly
+          pszichés deformációkat okozhat a gyűlöletbeszédet elszenvedőkben.
+          Létrehoztunk egy olyan mesterséges intelligencia alapú algoritmust,
+          amely képes magyar szövegekben azonosítani a gyűlöletbeszédet,
+          származzon az a szöveg akár social media platformokról, hírekből vagy
+          blogokról. Kulcsszavak: online gyűlöletbeszéd detektálás, gépi
+          tanulás, neurális háló, NLP (Natural Language Processing)
+        </p>
+        <div class="project-line hate-line"></div>
+        <!--lemorzsolodas-->
+        <h3 class="first-page__customer">
+          Ügyfelek lemorzsolódását előrejelző algoritmus
+        </h3>
+        <p class="first-page__customer-p">
+          Egy felhasználót megszerezni sok pénzbe kerül, ezért nagyon fontos a
+          megtartásuk. Ha időben tudja a cég, hogy kik azok, akik várhatóan le
+          fognak morzsolódni, akkor ezeket a felhasználókat még időben meg
+          tudják keresni és a számukra megfelelő lehetőséget ajánlani. Nem
+          csupán egy priorizált lista a cél ebben az esetben, hanem annak
+          megmutatása, hogy milyen tényezők játszanak szerepet a
+          lemorzsolódásban, valamint azt, hogy mikor szükséges beavatkozni a
+          folyamatba. Kulcsszavak: Marketing, churn, gépi tanulás,
+          adatvizualizáció
+        </p>
+        <div class="project-line customer-line"></div>
+        <!--TODO:gombra kattintva behozza a projektek oldalt-->
+        <button type="button" class="project-section__btn btn-warning">
+          További projektek
+        </button>
+      </section>
+      <!--------------------PARTNEREINK SECTION------------------------------->
+      <section class="first-page__partners">
+        <h2 class="first-page__partner">Partnereink</h2>
+        <!--------bootstrap carousel------------->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+                src="../assets/partner_logo/sanofi.png"
+                class="d-block mx-auto"
+                alt="Partner 1"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="../assets/partner_logo/siemens.png"
+                class="d-block mx-auto"
+                alt="Partner 2"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="../assets/partner_logo/upgrad.png"
+                class="d-block mx-auto"
+                alt="Partner 3"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="../assets/partner_logo/joszaki.png"
+                class="d-block mx-auto"
+                alt="Partner 4"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="../assets/partner_logo/syreon.png"
+                class="d-block mx-auto"
+                alt="Partner 5"
+              />
+            </div>
+            <!-- További partnerek logói itt -->
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="first-page__partner-p">
+          A világ <strong>számos</strong> területéről és iparágaiból ismertünk
+          meg partnereket. Amellett, hogy mindig nyitottak vagyunk újdonságok
+          megtapasztalására, elmondható, hogy számos területen nagy
+          tapasztalattal rendelkezünk.
+        </p>
+
+        <div class="partner-btn">
+          <button
+            type="button"
+            class="tovabbi-partner__btn btn-outline-warning"
+          >
+            További partnerek
+          </button>
+        </div>
+      </section>
+      <!------------------NOVEKEDES section------------------------>
+      <section class="first-page__growth">
+        <h2 class="">Növekedni vágyóknak, növekedésre képesektől</h2>
+        <p class="first-page__growth-p">10 év tapasztalat</p>
+        <div class="first-page__growth-line"></div>
+        <p class="first-page__growth-p">
+          Több, mint 40 sikeresen lezárt projekt
+        </p>
+        <div class="first-page__growth-line"></div>
+        <p class="first-page__growth-p">
+          Széles skála a AI-on és data sciences belül
+        </p>
+        <div class="first-page__growth-line"></div>
+        <p class="first-page__growth-p">
+          Minőségi, rövid idő alatti munkavégzés
+        </p>
+        <div class="first-page__growth-line"></div>
+        <p class="first-page__growth-p">
+          Akár data scientist vagy szoftverfejlesztő kiajánlása
+        </p>
+        <!--novekedes ikonok-->
+        <!--TODO alt, ikonok csereje-->
+        <div class="first-page__growth-container growth-container">
+          <div class="first-page__project-hexagon growth-hexagon">
+            <img class="growth-icon" src="../assets/icon/gyors.png" alt="" />
+            <p class="growth-container__p">Gyors eredmények</p>
+          </div>
+
+          <div class="first-page__project-hexagon growth-hexagon">
+            <img class="growth-icon" src="../assets/icon/rugalmas.png" alt="" />
+            <p class="growth-container__p">Rugalmas & Skálázható</p>
+          </div>
+
+          <div class="first-page__project-hexagon growth-hexagon">
+            <img
+              class="growth-icon"
+              src="../assets/icon/checklist.png"
+              alt=""
+            />
+            <p class="growth-container__p">Minőségi munkavégzés</p>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="kunzoltacio-btn btn-primary btn btn-warning"
+        >
+          Foglalj ingyenes konzultációt
+        </button>
+      </section>
+      <!--araink--------------->
+      <section class="price-section">
+        <h2 class="price-h2">Áraink</h2>
+        <p class="price-p">
+          Projekt alapon vagy órabér elszámolásban is szívesen együttműködünk,
+          akár új fejlesztésről vagy csapattag kiajánlásról van szó.
+        </p>
+        <div class="price-section__btn">
+          <button type="button" class="btn-primary btn btn-warning">
+            Foglalj ingyenes konzultációt
+          </button>
+        </div>
+      </section>
+      <!-------------------------------MEDIOR SECTION-------------------->
+      <section class="medior">
+        <h2 class="first-page__medior-h2 medior-h2">Medior - Senior</h2>
+        <h3 class="first-page__medior-h3 medior-h3">
+          Data Scientists and Developers
+        </h3>
+        <div class="first-page__medior-line medior-line"></div>
+        <div class="medior-price__container">
+          <p class="medior-price">20 000 - 35 000 Ft</p>
+          <p class="medior-price__hour">+ ÁFA / óra</p>
+        </div>
+        <p class="medior-price__text">
+          Egyszerű számlázás KFT-vel Minőségi, gyors, skálázható munkavégzés
+          Folyamatos kommunikáció, senior-szintű támogatás Minimális
+          adminisztráció 0 extra költség Projektmenedzseri támogatás
+        </p>
+      </section>
+      <!--KEZD MEG A NOVEKEDEST-->
+      <section class="do-it">
+        <h2 class="do-it__h2">
+          Kezd meg a növekedést az adatok jobb felhasználásával!
+        </h2>
+        <div class="do-it__btn">
+          <button
+            type="button"
+            class="partner-btn kapcsolat-btn btn btn-outline-warning"
+          >
+            Lépj velünk kapcsolatba
+          </button>
+        </div>
+      </section>
+      <div class="last-img">
+        <img
+          src="../assets/img/data_2.png"
+          alt="data visualition"
+          class="data-img__1"
+        />
+      </div>
+    </main>
+    <div class="footer-line"></div>
+    <!------------------------------------FOOTER------------------------------------->
+
+    <footer class="first-page__footer">
+      <h4 class="footer-h4">Data Science Europe</h4>
+      <p class="footer-contact__p">Contact</p>
+      <p>
+        <a href="mailto:gerzson.boros@datascienceeurope.ai"
+          >gerzson.boros@datascienceeurope.ai</a
+        >
+      </p>
+
+      <p class="footer-follow__p">Follow</p>
+      <p class="footer-subscribe__p">
+        Iratkozz fel a Data Science hírlevelünkre
+      </p>
+
+      <!--TODO INPUT MUKODESENEK MEGCSINALASA,touch-->
+      <div class="footer-input__container">
+        <form
+          action="https://formspree.io/f/xleqoqvp"
+          method="POST"
+          class="footer-form"
+        >
+          <input
+            name="email"
+            type="email"
+            class="footer-input"
+            placeholder="Enter your email"
+            id="emailInput"
+            required
+          />
+          <button class="footer-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-soc__container">
+        <div class="linkedin-icon__div">
+          <!--TODO: ikonok,img,alt,link-->
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-linkedin__link"><a href="#">LinkedIn</a></div>
+        <div class="facebook-icon__div">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="footer-fb__link">
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+    </footer>
+    <!--bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/nav.js"></script>
+    <!--GOMBOK JS-->
+    <script src="../js/buttons.js"></script>
+  </body>
+</html>
