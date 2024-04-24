@@ -13,4 +13,4 @@ azonos betumeretek a cimeknek stb
 soc linkek elhelyezese
 a dropdown-menu osztalyt atirtam hambi-dropdown__menure jsbe es navbar.cssbe hogy mukodjon a bootstrap
 egy kulon tobbi partnerhez html oldal
-
+bloghu-ba nyilak szineinek utananezni mert halvanyak

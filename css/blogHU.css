@@ -14,6 +14,8 @@
 
     .blog-container {
         margin-top:10rem;
+        padding: 0 1.5rem;
+       
      }
 
 
@@ -122,15 +124,13 @@
     .carousel-control-prev,
     .carousel-control-next {
       position: absolute;
-        top: -10%;
+        top: -5%;
         transform: translateY(-50%);
         font-size: 3rem;
         z-index: 1; /* A nyílak a kép felett legyenek */
         cursor: pointer;
         color: var(--sarga);
         margin:0 -1rem;
-      
-       
     }
 
     
