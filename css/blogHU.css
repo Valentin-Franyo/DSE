@@ -70,12 +70,20 @@
     .card-blog .blog-btn,
     .card-title {
         text-align: center; /* Módosítás: szöveg középre igazítása */
+
     }
 
     .blog-btn {
         width: 80%; /* Példa: a gomb szélessége 80%-os a szülő elemhez viszonyítva */
         display: block; /* Módosítás: gomb blokk elemmé alakítása */
         margin: 0 auto; /* Módosítás: gomb középre igazítása */
+        border: 3px solid var(--kek);
+        border-radius: 5px;
+       color: var(--sarga);
+       background-color: transparent;
+       font-size: 1.5rem;
+       padding: 0.5rem;
+
       
     }
 
