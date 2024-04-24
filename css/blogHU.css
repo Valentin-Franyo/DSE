@@ -9,17 +9,20 @@
         text-align: center;
         margin-top: 6rem;
         font-size: 3rem;
+       
      }
 
     .blog-container {
-        margin-top: 6rem;
+        margin-top:10rem;
      }
 
 
     .carousel-inner {
       overflow: visible;
-      width: calc(100% - 2rem);
+     
+      margin: auto;
         }
+        
 
     .card-blog {
         border: 3px solid var(--sarga);
@@ -121,28 +124,15 @@
       position: absolute;
         top: -10%;
         transform: translateY(-50%);
-        font-size: 2rem;
+        font-size: 3rem;
         z-index: 1; /* A nyílak a kép felett legyenek */
         cursor: pointer;
-        background-color:transparent;
         color: var(--sarga);
-        
-        
-     
+        margin:0 -1rem;
+      
        
     }
-    
-    .carousel-control-prev {
-        left: 10px;
-      
-    }
-    
-    .carousel-control-next {
-        right: 10px;
-    }
 
-
-    
     
 .first-age__footer{
 
