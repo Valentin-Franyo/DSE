@@ -212,12 +212,16 @@
     text-align: start;
    }
 
+   .modal-ol{
+    color: var(--sarga);
+   }
 
+   .modal-body li{
+    list-style:decimal;
 
+   }
 
-  
-
-
+/*-----------------------------------------------*
     /*footer*/
 footer{
     display: flex;

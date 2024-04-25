@@ -16,10 +16,10 @@ DSE:
     ☐ bloghu-ba nyilak szineinek utananezni mert halvanyak
     ✔ blog carouselnel ha carousel valt a nyil eltunik, @done (4/25/2024, 7:29:02 PM)
     ✔ z-index carousel resznel mert gorgetesnel a szoveg atlatszik a navnal @done (4/25/2024, 7:29:10 PM)
-    ☐ 
-    ☐ 
-    ☐ 
-    ☐
+    ☐ blog resz komment reszenek megoldasa,fronted,backend
+    ☐ blog modal megnyitasanal bal oldalt van egy kis hezag
+    ☐ blog resznel soc ikonok elhelyezese az aljan
+    ☐ blog szemet resznel ol-be margint adni hogy tavolabb kezdodjon a szam a szovegtol
     a dropdown-menu osztalyt atirtam hambi-dropdown__menure jsbe es navbar.cssbe hogy mukodjon a bootstrap 
 
     
