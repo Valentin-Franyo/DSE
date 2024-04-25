@@ -1,0 +1,25 @@
+DSE:
+    ☐ ikonok
+    ☐ partnerek oldal letrehozasa
+    ☐ felugro ablak letrehozasa feliratkozasnal
+    ☐ FAVICON
+    ☐ home.html nav atmasolasa a tobbi oldalhoz
+    ☐ letter spacing adasa
+    ☐ hamburgermenut barhol meglehessen nyitni
+    ☐ mindenhol  hyphens: auto;
+    ☐ akadalymentesites elleneorzese,kepek alt stb
+    ☐ buttonokhoz kattintas adas a teruleteknel
+    ☐ idezetek kisebbre vetele
+    ☐ azonos betumeretek a cimeknek stb
+    ☐ soc linkek elhelyezese
+    ☐ egy kulon tobbi partnerhez html oldal
+    ☐ bloghu-ba nyilak szineinek utananezni mert halvanyak
+    ✔ blog carouselnel ha carousel valt a nyil eltunik, @done (4/25/2024, 7:29:02 PM)
+    ✔ z-index carousel resznel mert gorgetesnel a szoveg atlatszik a navnal @done (4/25/2024, 7:29:10 PM)
+    ☐ 
+    ☐ 
+    ☐ 
+    ☐
+    a dropdown-menu osztalyt atirtam hambi-dropdown__menure jsbe es navbar.cssbe hogy mukodjon a bootstrap 
+
+    

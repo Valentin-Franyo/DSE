@@ -14,5 +14,5 @@ soc linkek elhelyezese
 a dropdown-menu osztalyt atirtam hambi-dropdown__menure jsbe es navbar.cssbe hogy mukodjon a bootstrap
 egy kulon tobbi partnerhez html oldal
 bloghu-ba nyilak szineinek utananezni mert halvanyak
-blog carouselnel ha carousel valt a nyil eltunik
-z-index carousel resznel mert gorgetesnel a szoveg atlatszik a navnal
+blog carouselnel ha carousel valt a nyil eltunik,  pipa
+z-index carousel resznel mert gorgetesnel a szoveg atlatszik a navnal, pipa 
