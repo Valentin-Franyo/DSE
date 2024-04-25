@@ -18,9 +18,8 @@
 
     .carousel-inner {
       overflow: visible;
-     
       margin: auto;
-        }
+      }
         
     .card-blog {
         border: 3px solid var(--sarga);
@@ -35,8 +34,8 @@
 
     .card-body {
       margin-top: -6rem;
-    
     }
+
     /*blog kepe*/
     .blog-img {
         position: relative; /* Módosítás: relatív pozíció */
@@ -48,6 +47,7 @@
         border: 3px solid var(--kek);
         border-radius: 10px;
     }
+
     /*blog cim*/
     .card-title {
         color: var(--kek);
@@ -60,12 +60,14 @@
         align-items: center; /* Elemek függőleges középre igazítása */
         padding: 1rem;
       }
+
     /*blog bejegyzes*/
     .card-blog p {
         margin: 2rem;
         position: relative; /* Relatív pozícionálás a tartalom igazításához */
         z-index: 1; /* A szöveg a kép alatt jelenjen meg */
     }
+
     /*bejegyzes,tovbb olvas gomb,cim*/
     .card-blog p,
     .card-blog .blog-btn,
@@ -80,12 +82,10 @@
         margin: 0 auto; /* Módosítás: gomb középre igazítása */
         border: 3px solid var(--kek);
         border-radius: 5px;
-       color: var(--sarga);
-       background-color: transparent;
-       font-size: 1.5rem;
-       padding: 0.5rem;
-
-      
+        color: var(--sarga);
+        background-color: transparent;
+        font-size: 1rem;
+        padding: 0.5rem;
     }
 
     /*blog iro kepe*/
@@ -96,10 +96,11 @@
         border-radius: 50%;
       }
 
+      .bog-date__container{
+      }
+
       .blog-date {
         color: var(--kek);
-        text-align: right;
-        
       }
       
     .card-text {
@@ -112,15 +113,12 @@
         font-size: 90%;
         margin-right: auto; /* A "Bye Bertha Dougless" és a dátum jobbra igazítása */
       }
-      .admin-text__p {
-        margin-left: auto; /* A dátum jobbra igazítása */
-      }
 
-   
     
+   
     .carousel-control-prev,
     .carousel-control-next {
-      position: absolute;
+        position: absolute;
         top: -5%;
         transform: translateY(-50%);
         font-size: 3rem;
@@ -130,9 +128,11 @@
         margin:0 -1rem;
     }
 
-    
-.first-age__footer{
-
+    /*footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 }
