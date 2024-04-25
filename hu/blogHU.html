@@ -35,6 +35,43 @@
     />
   </head>
   <body>
+    <!--modal-->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal cím</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal tartalom...</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Bezárás
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------->
     <!---------------------------------------------------NAV----------------------------------------------------------------------------------------------------------------->
     <header>
       <div class="logo-container">
@@ -162,7 +199,12 @@
                     miatti veszélyek elkerülésében segítheti a csatornázási
                     munkálatokat. A SewerAI...
                   </p>
-                  <button class="btn btn-outline-warning blog-btn">
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning blog-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
                     Tovább olvasom
                   </button>
                 </div>
@@ -335,5 +377,6 @@
     ></script>
     <script src="../js/nav.js"></script>
     <script src="../js/buttons.js"></script>
+    <script src="../js/modalblog.js"></script>
   </body>
 </html>
