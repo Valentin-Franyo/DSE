@@ -7,19 +7,14 @@
     h1 {
         color: var(--sarga);
         font-size: 3rem;
-        margin-top: 6rem;
-        text-align: center;
-     
+        margin-top: 10rem;
+        text-align: center;     
      }
 
-    
- 
     .blog-container {
-        margin-top:10rem;
-        padding: 0 1.5rem;
-       
+        margin-top:15rem;
+        padding: 0 1.5rem;   
      }
-
 
     .carousel-inner {
       overflow: visible;
@@ -27,7 +22,6 @@
       margin: auto;
         }
         
-
     .card-blog {
         border: 3px solid var(--sarga);
         border-radius: 10px;
@@ -60,9 +54,9 @@
        
     }
 
-    .blog-bejegyzes {
+    .admin-info {
         display: flex;
-        justify-content: space-between; /* Elemek elosztása az elérhető területen belül */
+        justify-content:space-around; /* Elemek elosztása az elérhető területen belül */
         align-items: center; /* Elemek függőleges középre igazítása */
         padding: 1rem;
       }
@@ -105,6 +99,7 @@
       .blog-date {
         color: var(--kek);
         text-align: right;
+        
       }
       
     .card-text {
