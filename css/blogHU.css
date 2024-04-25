@@ -161,7 +161,18 @@
     color: var(--sarga);
    }
 
-
+  .modal-img__icons {
+    color: var(--sarga);
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+  }
 
 
 
