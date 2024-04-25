@@ -131,41 +131,20 @@
 
     /*--------MODAL-----------------*/
     .modal-header{
-      background-color: var(--szurke1);
+      background-color: var(--szurke3);
       margin: 0;
       padding: 0;
     }
 
-   
-
   /*kep*/
    .modal-ai {
-  
     width: 100%;
     height: 100%;
     clip-path: polygon(1% 1%, 100% 0%, 100% 49%, 0 100%);
    }
 
-   .modal-title-container{
-    background-color: var(--szurke1);
-   }
-
-  /*ai fold alatt is cim*/
-   .modal-title {
-    margin-top: 1rem;
-    text-align: center;
-    color: var(--kek);
-   }
-
-   .modal-body {
-    background-color: var(--szurke1);
-   }
-
-   .modal-body p{
-    color: var(--sarga);
-   }
-
-  .modal-img__icons {
+/*ikonok az ai kepen*/
+    .modal-img__icons {
     background: linear-gradient(to bottom, rgb(0, 1, 2), rgba(0, 0, 0, 0));
     color: var(--sarga);
     font-size: 2rem;
@@ -179,9 +158,7 @@
     box-sizing: border-box;
   }
 
-
-  
-  .modal-blog__img-container {
+    .modal-blog__img-container {
     position: absolute;
     margin-top: 78%;
     z-index: 1;
@@ -190,27 +167,55 @@
     justify-content: flex-start;
     flex-direction: row;
     text-align: center;
-    margin-left: 10%;
+    margin-left: 15%;
     gap: 1rem;
 }
   
-  
-  .modal-blog__img {
+  /*blog iro kep,nev,datum*/
+   .modal-blog__img {
     max-width: 5rem;
     height: auto;
     border: 3px solid var(--sarga);
     border-radius: 50%;
-    
     bottom: 4rem; /* Áthelyezzük a kis képet 4 rem-re a modális ablak aljától */
     left: 1rem; /* Hozzáadunk egy margót a bal oldalhoz */
   }
 
-  .modal-blog__admin,
-  .modal-blog__date {
+   .modal-blog__admin,
+    .modal-blog__date {
     color: var(--kek);
   }
   
+ 
 
+  /*ai fold alatt is cim*/
+   .modal-title {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--kek);
+   }
+
+    .modal-title-container{
+    background-color: var(--szurke3);
+    padding-bottom: 1rem;
+    margin:-1% ;
+   }
+
+/*tobbi szoveg kontener*/
+   .modal-body {
+    background-color: var(--szurke3);
+   }
+
+   .modal-body p{
+    color: var(--sarga);
+    line-height: 2;
+    text-align: start;
+   }
+
+
+
+
+  
 
 
     /*footer*/
