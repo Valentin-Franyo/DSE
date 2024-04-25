@@ -180,6 +180,38 @@
   }
 
 
+  
+  .modal-blog__img-container {
+    position: absolute;
+    margin-top: 78%;
+    z-index: 1;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 10%;
+    gap: 1rem;
+}
+  
+  
+  .modal-blog__img {
+    max-width: 5rem;
+    height: auto;
+    border: 3px solid var(--sarga);
+    border-radius: 50%;
+    
+    bottom: 4rem; /* Áthelyezzük a kis képet 4 rem-re a modális ablak aljától */
+    left: 1rem; /* Hozzáadunk egy margót a bal oldalhoz */
+  }
+
+  .modal-blog__admin,
+  .modal-blog__date {
+    color: var(--kek);
+  }
+  
+
+
 
     /*footer*/
 footer{
