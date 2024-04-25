@@ -126,6 +126,21 @@
         margin:0 -1rem;
     }
 
+    /*--------MODAL-----------------*/
+
+   .modal-ai {
+    width: 50%;
+   }
+/*ai fold alatt is cim*/
+   .modal-title {
+    text-align: center;
+   }
+
+
+
+
+
+
     /*footer*/
 footer{
     display: flex;
