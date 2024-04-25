@@ -96,9 +96,7 @@
         border-radius: 50%;
       }
 
-      .bog-date__container{
-      }
-
+     
       .blog-date {
         color: var(--kek);
       }
@@ -134,5 +132,7 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
+
 
 }

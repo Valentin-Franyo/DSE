@@ -3,7 +3,7 @@ partnerek oldal letrehozasa
 felugro ablak letrehozasa feliratkozasnal
 FAVICON
 home.html nav atmasolasa a tobbi oldalhoz
-letter spacing csinalasa
+letter spacing adasa
 hamburgermenut barhol meglehessen nyitni
 mindenhol  hyphens: auto;
 akadalymentesites elleneorzese,kepek alt stb
@@ -15,3 +15,4 @@ a dropdown-menu osztalyt atirtam hambi-dropdown__menure jsbe es navbar.cssbe hog
 egy kulon tobbi partnerhez html oldal
 bloghu-ba nyilak szineinek utananezni mert halvanyak
 blog carouselnel ha carousel valt a nyil eltunik
+z-index carousel resznel mert gorgetesnel a szoveg atlatszik a navnal
