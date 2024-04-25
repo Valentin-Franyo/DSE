@@ -13,6 +13,7 @@
       z-index: 1;
       top: 0;
       border-bottom: 5px solid var(--szurke1);
+      z-index: 10;
     }
 /*logo kep*/
     .logo-svg{

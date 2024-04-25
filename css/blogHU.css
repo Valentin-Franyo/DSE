@@ -14,8 +14,10 @@
     .blog-container {
         margin-top:15rem;
         padding: 0 1.5rem;   
+        z-index: -1;
      }
 
+  
     .carousel-inner {
       overflow: visible;
       margin: auto;
@@ -116,6 +118,7 @@
    
     .carousel-control-prev,
     .carousel-control-next {
+      height: 30%;
         position: absolute;
         top: -5%;
         transform: translateY(-50%);
