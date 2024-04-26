@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <!---CSS-->
-    <link rel="stylesheet" href="../css/homeHU.css" />
+    <link rel="stylesheet" href="../css/contactHU.css" />
 
     <!-- Material Symbols Outlined font -->
     <link
@@ -28,158 +28,219 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <header>
-    <div class="logo-container">
-      <a href="../hu/homeHU.html" class="logo-link">
-        <img class="logo-svg" src="../assets/logo/dselogo.svg" alt="" />
-      </a>
-    </div>
+  <body>
+    <!---------------------------------------------------NAV----------------------------------------------------------------------------------------------------------------->
+    <header>
+      <div class="logo-container">
+        <a href="../hu/homeHU.html" class="logo-link">
+          <img class="logo-svg" src="../assets/logo/dselogo.svg" alt="" />
+        </a>
+      </div>
 
-    <div id="nav-icon2" class="nav-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+      <div id="nav-icon2" class="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-    <nav class="kozep">
-      <div class="hambi-container">
-        <div class="language-container">
-          <select id="language-select">
-            <option value="en">HU</option>
-            <option value="hu">ENG</option>
-          </select>
-        </div>
-        <div class="line line1"></div>
-        <ul class="list">
-          <li><a href="../hu/homeHU.html">Home</a></li>
-          <li class="hambi-dropdown__menu" id="projektek-menu">
-            <button onclick="handleDropdownClicked(event)">
-              Projektek
-              <span
-                id="dropdown-icon-projektek"
-                class="material-symbols-outlined"
-              >
-                expand_more
-              </span>
-            </button>
-            <section class="dropdown__menu-labels">
-              <button onclick="scrollToProject()">Tüdőrák diagnosztika</button>
-              <button onclick="Project2">Projekt2</button>
-              <button onclick="Project3">Projekt3</button>
-              <button onclick="ProjectsHU()">Tovabbi projektek</button>
-            </section>
-          </li>
-          <li class="hambi-dropdown__menu" id="blog-menu">
-            <button onclick="handleDropdownClicked(event)">
-              Blog
-              <span id="dropdown-icon-blog" class="material-symbols-outlined">
-                expand_more
-              </span>
-            </button>
-            <section class="dropdown__menu-labels">
-              <button>blog1</button>
-              <button>blog2</button>
-              <button>blog3</button>
-              <button onclick="BlogHU()">Tovabbi blog</button>
-            </section>
-          </li>
-          <li class="hambi-dropdown__menu" id="portfolio-menu">
-            <button onclick="handleDropdownClicked(event)">
-              Portfolio
-              <span
-                id="dropdown-icon-portfolio"
-                class="material-symbols-outlined"
-              >
-                expand_more
-              </span>
-            </button>
-            <section class="dropdown__menu-labels">
-              <button>Portfolio1</button>
-              <button>Portfolio2</button>
-              <button>Portfolio3</button>
-            </section>
-          </li>
-          <li><a href="../hu/contactHU.html">Kapcsolat</a></li>
-        </ul>
-        <div class="line"></div>
-        <div class="soc-icons">
-          <ul class="soc-ul">
-            <li class="soc-li">
-              <a href="www.facebook.com">
-                <i class="fa-brands fa-facebook soc-icon"></i>
-              </a>
+      <nav class="kozep">
+        <div class="hambi-container">
+          <div class="language-container">
+            <select id="language-select">
+              <option value="en">HU</option>
+              <option value="hu">ENG</option>
+            </select>
+          </div>
+          <div class="line line1"></div>
+          <ul class="list">
+            <li><a href="../hu/homeHU.html">Home</a></li>
+            <li class="hambi-dropdown__menu" id="projektek-menu">
+              <button onclick="handleDropdownClicked(event)">
+                Projektek
+                <span
+                  id="dropdown-icon-projektek"
+                  class="material-symbols-outlined"
+                >
+                  expand_more
+                </span>
+              </button>
+              <section class="dropdown__menu-labels">
+                <button onclick="scrollToProject()">
+                  Tüdőrák diagnosztika
+                </button>
+                <button onclick="Project2">Projekt2</button>
+                <button onclick="Project3">Projekt3</button>
+                <button onclick="ProjectsHU()">Tovabbi projektek</button>
+              </section>
             </li>
-            <li class="soc-li">
-              <a href="">
-                <i class="fa-solid fa-at soc-icon"></i>
-              </a>
+            <li class="hambi-dropdown__menu" id="blog-menu">
+              <button onclick="handleDropdownClicked(event)">
+                Blog
+                <span id="dropdown-icon-blog" class="material-symbols-outlined">
+                  expand_more
+                </span>
+              </button>
+              <section class="dropdown__menu-labels">
+                <button>blog1</button>
+                <button>blog2</button>
+                <button>blog3</button>
+                <button onclick="BlogHU()">Tovabbi blog</button>
+              </section>
             </li>
-            <li class="soc-li soc-icon">
-              <a href="">
-                <i class="fa-brands fa-instagram soc-icon"></i>
-              </a>
+            <li class="hambi-dropdown__menu" id="portfolio-menu">
+              <button onclick="handleDropdownClicked(event)">
+                Portfolio
+                <span
+                  id="dropdown-icon-portfolio"
+                  class="material-symbols-outlined"
+                >
+                  expand_more
+                </span>
+              </button>
+              <section class="dropdown__menu-labels">
+                <button>Portfolio1</button>
+                <button>Portfolio2</button>
+                <button>Portfolio3</button>
+              </section>
             </li>
+            <li><a href="../hu/contactHU.html">Kapcsolat</a></li>
           </ul>
+          <div class="line"></div>
+          <div class="soc-icons">
+            <ul class="soc-ul">
+              <li class="soc-li">
+                <a href="www.facebook.com">
+                  <i class="fa-brands fa-facebook soc-icon"></i>
+                </a>
+              </li>
+              <li class="soc-li">
+                <a href="">
+                  <i class="fa-solid fa-at soc-icon"></i>
+                </a>
+              </li>
+              <li class="soc-li soc-icon">
+                <a href="">
+                  <i class="fa-brands fa-instagram soc-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!----------------------------------MAIN--------------------------------------->
+    <main>
+      <section class="contact-form__section">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="company-name">Company Name</label>
+            <input type="text" id="company-name" name="company-name" />
+          </div>
+          <div class="form-group">
+            <label>Open Projects *</label>
+            <div class="form-group-checkbox">
+              <input
+                type="checkbox"
+                id="open-project"
+                name="open-project"
+                value="open"
+              />
+              <label for="open-project">Nyitott projekt</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Closed Projects *</label>
+            <div class="form-group-checkbox">
+              <input
+                type="checkbox"
+                id="closed-project"
+                name="closed-project"
+                value="closed"
+              />
+              <label for="closed-project">Projekt</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <div class="footer-line"></div>
+    <!------------------------------------FOOTER------------------------------------->
+
+    <footer class="first-page__footer">
+      <h4 class="footer-h4">Data Science Europe</h4>
+      <p class="footer-contact__p">Contact</p>
+      <p>
+        <a href="mailto:gerzson.boros@datascienceeurope.ai"
+          >gerzson.boros@datascienceeurope.ai</a
+        >
+      </p>
+
+      <p class="footer-follow__p">Follow</p>
+      <p class="footer-subscribe__p">
+        Iratkozz fel a Data Science hírlevelünkre
+      </p>
+
+      <!--TODO INPUT MUKODESENEK MEGCSINALASA,touch-->
+      <div class="footer-input__container">
+        <form
+          action="https://formspree.io/f/xleqoqvp"
+          method="POST"
+          class="footer-form"
+        >
+          <input
+            name="email"
+            type="email"
+            class="footer-input"
+            placeholder="Enter your email"
+            id="emailInput"
+            required
+          />
+          <button class="footer-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-soc__container">
+        <div class="linkedin-icon__div">
+          <!--TODO: ikonok,img,alt,link-->
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-linkedin__link"><a href="#">LinkedIn</a></div>
+        <div class="facebook-icon__div">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="footer-fb__link">
+          <a href="#">Facebook</a>
         </div>
       </div>
-    </nav>
-  </header>
-  <body></body>
-  <footer class="first-page__footer">
-    <h4 class="footer-h4">Data Science Europe</h4>
-    <p class="footer-contact__p">Contact</p>
-    <p>
-      <a href="mailto:gerzson.boros@datascienceeurope.ai"
-        >gerzson.boros@datascienceeurope.ai</a
-      >
-    </p>
-
-    <p class="footer-follow__p">Follow</p>
-    <p class="footer-subscribe__p">Iratkozz fel a Data Science hírlevelünkre</p>
-
-    <!--TODO INPUT MUKODESENEK MEGCSINALASA,touch-->
-    <div class="footer-input__container">
-      <form
-        action="https://formspree.io/f/xleqoqvp"
-        method="POST"
-        class="footer-form"
-      >
-        <input
-          name="email"
-          type="email"
-          class="footer-input"
-          placeholder="Enter your email"
-          id="emailInput"
-          required
-        />
-        <button class="footer-btn" type="submit">Subscribe</button>
-      </form>
-    </div>
-
-    <div class="footer-soc__container">
-      <div class="linkedin-icon__div">
-        <!--TODO: ikonok,img,alt,link-->
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      </div>
-      <div class="footer-linkedin__link"><a href="#">LinkedIn</a></div>
-      <div class="facebook-icon__div">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-      </div>
-      <div class="footer-fb__link">
-        <a href="#">Facebook</a>
-      </div>
-    </div>
-  </footer>
-  <!--bootstrap js-->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-  <script src="../js/nav.js"></script>
-  <!--GOMBOK JS-->
-  <script src="../js/buttons.js"></script>
+    </footer>
+    <!--bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/nav.js"></script>
+    <!--GOMBOK JS-->
+    <script src="../js/buttons.js"></script>
+  </body>
 </html>
