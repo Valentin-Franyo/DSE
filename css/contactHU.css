@@ -9,7 +9,7 @@
     .contact-h1{
         color:var(--sarga);
         margin-top: 7rem;
-        font-size: 2rem;
+        font-size: 3rem;
         text-align: center;
     }
 
@@ -27,6 +27,11 @@
     border: 3px solid var(--kek);
     border-radius: 10px;
   }
+
+  /*form csillag*/
+  .form-star {
+    color: red;
+  }
   /*group divek*/
   .contact-form__section form .form-group {
     display: flex;
@@ -39,6 +44,8 @@
   /*email stb feliratok*/
   .contact-form__section form .form-group label {
     text-align: center; /* Az input címkék középre igazítása */
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
    
   }
   /*input mezok*/
@@ -47,19 +54,31 @@
     width: 100%; /* Az inputok és textarea-k teljes szélessége */
     padding: 0.5rem; /* Belső tér az inputok és textarea-k körül */
     box-sizing: border-box; /* Az elem szélességének és magasságának beállítása a padding és a border méreteket is figyelembe véve */
-   
+    background-color:var(--sarga);
+    border: 3px solid var(--kek);
+    border-radius: 10px;
+  }
+/*message*/
+  textarea {
+    height: 150px;
   }
 
   /*-----gomb---*/
   .contact-form__btn{
     margin-top: 3rem;
     width: 60%;
+    padding: 0.5rem 0;
+    color: var(--fekete);
+    border: 3px solid var(--kek);
+    border-radius: 10px;
+    background-color: var(--sarga);
   }
 
 
 /*checkbox*/
 input[type="checkbox"] {
     transform: scale(1.8); /* Példa: a méret 150%-ra növelése */
+    margin: 2rem 0;
   }
   
   .checkbox-container {
@@ -82,6 +101,4 @@ input[type="checkbox"] {
   }
   
 
-  
-      
 }
