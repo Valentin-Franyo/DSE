@@ -20,7 +20,7 @@ DSE:
     ☐ blog modal megnyitasanal bal oldalt van egy kis hezag
     ☐ blog resznel soc ikonok elhelyezese az aljan
     ☐ menu pontoknal minden gombnak megoldani az atiranyitast
-    ☐ 
+    ☐ kapcsolat resznel checkboxnak szint adni
 
     ☐ blog szemet resznel ol-be margint adni hogy tavolabb kezdodjon a szam a szovegtol
     a dropdown-menu osztalyt atirtam hambi-dropdown__menure jsbe es navbar.cssbe hogy mukodjon a bootstrap 

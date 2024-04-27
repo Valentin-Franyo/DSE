@@ -4,3 +4,84 @@
 @import url(./footerHU.css);
 
 /*mobil*/
+@media only screen and (max-width: 575px) {
+   
+    .contact-h1{
+        color:var(--sarga);
+        margin-top: 7rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+     label {
+    color:var(--sarga);
+      }
+      
+/*kapacsolat section*/
+.contact-form__section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Középre igazítás vízszintesen */
+    margin: 3rem 1rem;
+    padding: 3rem 0;
+    border: 3px solid var(--kek);
+    border-radius: 10px;
+  }
+  /*group divek*/
+  .contact-form__section form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Középre igazítás vízszintesen */
+    margin-bottom: 1rem; /* 1rem rés a form elemek között */
+    width: 90%;
+    
+  }
+  /*email stb feliratok*/
+  .contact-form__section form .form-group label {
+    text-align: center; /* Az input címkék középre igazítása */
+   
+  }
+  /*input mezok*/
+  .contact-form__section form .form-group input,
+  .contact-form__section form .form-group textarea {
+    width: 100%; /* Az inputok és textarea-k teljes szélessége */
+    padding: 0.5rem; /* Belső tér az inputok és textarea-k körül */
+    box-sizing: border-box; /* Az elem szélességének és magasságának beállítása a padding és a border méreteket is figyelembe véve */
+   
+  }
+
+  /*-----gomb---*/
+  .contact-form__btn{
+    margin-top: 3rem;
+    width: 60%;
+  }
+
+
+/*checkbox*/
+input[type="checkbox"] {
+    transform: scale(1.8); /* Példa: a méret 150%-ra növelése */
+  }
+  
+  .checkbox-container {
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+
+  .form-group-checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+  }
+/*checkbox melletti szoveg*/
+  .checkbox-wrapper label {
+    margin-left: 1rem; /* 1rem távolság a checkboxtól */
+  }
+  
+
+  
+      
+}
