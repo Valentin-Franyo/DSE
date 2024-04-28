@@ -1,0 +1,9 @@
+@import url(./baseHU.css);
+@import url(./navbarHU.css);
+@import url(../scss/component.css);
+@import url(./footerHU.css);
+/*mobil*/
+
+@media only screen and (max-width: 575px) {
+    
+}
