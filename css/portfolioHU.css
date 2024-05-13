@@ -168,8 +168,9 @@
 }
 
 /*indikator(kep valtasi pontok*/
-.carousel-indicators {
-    margin-top: 10rem;
-}  
+
+.carousel-item {
+    left: 25%;
+}
 
 }
