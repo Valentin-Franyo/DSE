@@ -7,14 +7,14 @@
 @media only screen and (max-width: 575px) {
         /*elso section*/
         body {
-            background-color: red;
+          
         }
     .portfolio-section {
         margin-top: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .portfolio-h1 {
@@ -35,7 +35,141 @@
         margin-top: 3rem;
         padding: 0.3rem 1rem;
         border: 3px solid var(--kek);
-        border-radius: 10px;
+        border-radius: 10px;    
         background-color: var(--sarga);
     }
+
+    /*portfolio letoltes alatti szoveg*/
+    .portfolio-first__p{
+        color: var(--sarga);
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    /*rolunk section*/
+    .portfolio-about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 3px solid var(--sarga);
+        border-radius: 10px;
+        background-color: var(--szurke3);
+        color: var(--sarga);
+        padding: 1rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    /*rolunk cim*/
+    .portfolio-about h2 {
+        color: var(--sarga);
+    }
+
+    /*portfolio szolgaltatasok h2*/
+    .portfolio-szolgaltatasok h2 {
+        color: var(--sarga);
+        text-align: center;
+    }
+
+    /*szolgaltatasok bekezdes*/
+    .portfolio-szolgaltatasok p {
+        color: var(--feher);
+        text-align: center;
+        margin: 1rem;
+        padding: 0 1rem;
+    }
+
+    /*---------carousel---------------*/
+    .portfolio-carousel {
+        margin: 1rem;
+      
+    }
+
+    /*kartyak*/
+.services-card {
+    width: calc(50% - 5px); /* 50% - 5px, hogy két kártya elférjen egymás mellett */
+    margin-bottom: 20px; /* Térköz a kártyák között */
+    border: 3px solid black; /* 3px fekete keret */
+    background-color: var(--szurke3);
+    border-radius: 10px;
+    box-sizing: border-box; /* A margin is számítson a kártya szélességébe */
+
+}
+
+
+/*hatszog*/
+.services-hexagon {
+    position: relative;
+    width: 60px; /* Átméretezheted igényeid szerint */
+    height: 34.64px; /* Átméretezheted igényeid szerint */
+    background-color: var(--sarga); /* Szín igény szerint */
+    margin: 17.32px auto; /* Középre igazítás */
+    margin-top: 2rem;
+}
+
+.services-hexagon:before,
+.services-hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+.services-hexagon:before {
+  bottom: 100%;
+  border-bottom: 17.32px solid var(--sarga); /* Szín igény szerint */
+}
+
+.services-hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 17.32px solid var(--sarga); /* Szín igény szerint */
+}
+
+
+/*kartyaba az ikon*/
+.services-icon{
+    width: 35px;
+    height: auto;
+}
+
+.services-line {
+    height: 2px;
+    width: calc(90% -10px);
+    background-color: var(--sarga);
+    margin: 1rem;
+}
+
+/*katyakban levo szoveg*/
+.services-text {
+    text-shadow: 3px 3px 3px var(--fekete);
+     
+}
+
+.services-card p{
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+.services-text,
+.services-card p {
+    color: var(--feher);
+    text-align: center;
+    padding: 0.5rem;
+    max-width: calc(100% - 10px);; /* A konténer szélességéből levonjuk a paddingot */
+    margin: auto; /* Középre igazítás */
+    overflow-wrap: break-word;
+    hyphens: auto; 
+}
+
+.carousel-item__portfolio {
+   background-color: red;
+}
+
+
+   
+
+ 
+
 }
