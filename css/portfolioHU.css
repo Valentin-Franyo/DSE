@@ -83,94 +83,120 @@
     /*---------carousel---------------*/
     .portfolio-carousel {
         margin: 1rem;
+        padding-bottom: 5rem;
       
     }
 
     /*kartyak*/
-.services-card {
-    width: calc(50% - 5px); /* 50% - 5px, hogy két kártya elférjen egymás mellett */
-    margin-bottom: 20px; /* Térköz a kártyák között */
-    border: 3px solid black; /* 3px fekete keret */
-    background-color: var(--szurke3);
-    border-radius: 10px;
-    box-sizing: border-box; /* A margin is számítson a kártya szélességébe */
-
-}
-
-
-/*hatszog*/
-.services-hexagon {
-    position: relative;
-    width: 60px; /* Átméretezheted igényeid szerint */
-    height: 34.64px; /* Átméretezheted igényeid szerint */
-    background-color: var(--sarga); /* Szín igény szerint */
-    margin: 17.32px auto; /* Középre igazítás */
-    margin-top: 2rem;
-}
-
-.services-hexagon:before,
-.services-hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-}
-
-.services-hexagon:before {
-  bottom: 100%;
-  border-bottom: 17.32px solid var(--sarga); /* Szín igény szerint */
-}
-
-.services-hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 17.32px solid var(--sarga); /* Szín igény szerint */
-}
+    .services-card {
+        width: calc(50% - 5px); /* 50% - 5px, hogy két kártya elférjen egymás mellett */
+        margin-bottom: 20px; /* Térköz a kártyák között */
+        border: 3px solid black; /* 3px fekete keret */
+        background-color: var(--szurke3);
+        border-radius: 10px;
+        box-sizing: border-box; /* A margin is számítson a kártya szélességébe */        
+    }
+/*service cards,mas classal,hogy ne hasson a homehtml-be talalhato kartyakra*/
+    .portfolio-service {
+        height: 350px;
+    }
 
 
-/*kartyaba az ikon*/
-.services-icon{
-    width: 35px;
-    height: auto;
-}
+    /*hatszog*/
+    .services-hexagon {
+        position: relative;
+        width: 60px; /* Átméretezheted igényeid szerint */
+        height: 34.64px; /* Átméretezheted igényeid szerint */
+        background-color: var(--sarga); /* Szín igény szerint */
+        margin: 17.32px auto; /* Középre igazítás */
+        margin-top: 2rem;
+    }
 
-.services-line {
-    height: 2px;
-    width: calc(90% -10px);
-    background-color: var(--sarga);
-    margin: 1rem;
-}
+    .services-hexagon:before,
+    .services-hexagon:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+    }
 
-/*katyakban levo szoveg*/
-.services-text {
-    text-shadow: 3px 3px 3px var(--fekete);
-     
-}
+    .services-hexagon:before {
+      bottom: 100%;
+      border-bottom: 17.32px solid var(--sarga); /* Szín igény szerint */
+    }
 
-.services-card p{
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-}
-.services-text,
-.services-card p {
-    color: var(--feher);
-    text-align: center;
-    padding: 0.5rem;
-    max-width: calc(100% - 10px);; /* A konténer szélességéből levonjuk a paddingot */
-    margin: auto; /* Középre igazítás */
-    overflow-wrap: break-word;
-    hyphens: auto; 
-}
+    .services-hexagon:after {
+      top: 100%;
+      width: 0;
+      border-top: 17.32px solid var(--sarga); /* Szín igény szerint */
+    }
 
-.carousel-item__portfolio {
-   background-color: red;
-}
 
-/*indikator(kep valtasi pontok*/
+    /*kartyaba az ikon*/
+    .services-icon{
+        width: 35px;
+        height: auto;
+    }
 
-.carousel-item {
-    left: 25%;
-}
+    .services-line {
+        height: 2px;
+        width: calc(90% -10px);
+        background-color: var(--sarga);
+        margin: 1rem;
+    }
 
-}
+    /*katyakban levo szoveg*/
+    .services-text {
+        text-shadow: 3px 3px 3px var(--fekete);
+
+    }
+
+    .services-card p{
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+    .services-text,
+    .services-card p {
+        color: var(--feher);
+        text-align: center;
+        padding: 0.5rem;
+        max-width: calc(100% - 10px);; /* A konténer szélességéből levonjuk a paddingot */
+        margin: auto; /* Középre igazítás */
+        overflow-wrap: break-word;
+        hyphens: auto; 
+    }
+
+    /*carousel elemek kozepre igazitasA*/
+    .carousel-item {
+        left: 25%;
+    }
+/* carousel indikatorok */
+    .carousel-indicators {
+        position: absolute;
+        bottom: -5rem; 
+    }
+
+    .carousel-indicators [data-bs-target] {
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        margin-right: 1rem;
+        border: 3px solid var(--sarga); /* Alapértelmezett keret átlátszó */
+        cursor: pointer;
+        background-color:transparent;
+        border-radius: 50%; /* Kör alakú */
+      }
+      
+      .carousel-indicators [data-bs-target].active {
+        background-color: var(--kek); /* Aktív indikátor kitöltése */
+        border-color: var(--sarga); /* Aktív indikátor kerete */
+      }
+
+      /*nyilak*/
+      .portfolio-arrow {
+        
+      }
+    }
