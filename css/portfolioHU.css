@@ -197,6 +197,13 @@
 
       /*nyilak*/
       .portfolio-arrow {
-        
+        position: absolute;
+        top: 115%;
+        transform: translateY(-50%);
+        font-size: 3rem;
+        z-index: 1; /* A nyílak a kép felett legyenek */
+        cursor: pointer;
+        color: var(--sarga);
+        margin:0 -1rem;
       }
     }
