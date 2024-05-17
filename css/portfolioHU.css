@@ -7,7 +7,7 @@
 @media only screen and (max-width: 575px) {
         /*elso section*/
         body {
-          background-image: url(../assets/img/background.png); 
+         background-image:url(../assets/img/background.png);
         }
     .portfolio-section {
         margin-top: 3rem;
@@ -423,10 +423,47 @@
         text-align: center;
         padding: 0.5rem;
     }
+/*------------PARTNEREK-----------*/
+    .portfolio-partners__section {
+        background-color: var(--atlatszo);
+        border-radius: 10px;
+    }
+    .first-page__partners h2{
+        font-size: 2rem;
+        color: var(--sarga);
+        text-align: center;
+        margin: 2rem;
+        padding: 2rem;
+    }
+    
+    .first-page__partner-p {
+        margin: 2rem;
+        padding-top: 2rem;
+        text-align: center;
+        color: var(--feher);
+    }
+    
+    .first-page__partner-p strong  {
+        color: var(--sarga);
+    }
+    /*tovabbi partner btn*/
+    .tovabbi-partner__btn {
+        border: 3px solid var(--kek);
+        border-radius: 10px;
+        background-color:transparent;
+        color: var(--sarga);
+        width: 80%;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+    }
+
+   
+  
+    
 
    
     
-    
 
-    
+
+     
     }
