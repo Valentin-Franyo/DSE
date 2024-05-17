@@ -12,6 +12,12 @@
     --atlatszo:rgba(54, 53, 53, 0.5);
 }
 
+/*scrollbar*/
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #f5bc01 #1C5472;
+  }
+  
 /*CSS RESET*/
 * {
     margin: 0;

@@ -394,18 +394,20 @@
         text-align: center;
         border: 3px solid var(--kek);
         width: 75%;
-        height: 200px;
+        height: 250px;
         background-color: var(--atlatszo);
         margin: 1rem 0;  
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        
       
     }
 
     .portfolio-common__card h4 {
         color: var(--kek);
         margin-top: 0.5rem;
+        font-size: 1.5rem;
     }
 
     .common-line {
@@ -417,14 +419,13 @@
 
     .portfolio-common__card p {
         color: var(--sarga);
-        overflow: hidden;
+        overflow: scroll;
         text-align: center;
         padding: 0.5rem;
     }
 
-    .portfolio-common__card p:hover {
-        overflow: auto;
-    }
+   
+    
     
 
     
