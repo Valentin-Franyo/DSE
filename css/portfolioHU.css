@@ -7,8 +7,7 @@
 @media only screen and (max-width: 575px) {
         /*elso section*/
         body {
-            background-color: red;
-          /*background-image: url(../assets/img/background.png); */
+          background-image: url(../assets/img/background.png); 
         }
     .portfolio-section {
         margin-top: 3rem;
@@ -103,7 +102,7 @@
         height: 270px;
         width: 70%;
         border: 3px solid var(--kek);
-        background-color:rgba(54, 53, 53, 0.5)
+        background-color:var(--atlatszo);
         
     }
 
@@ -224,6 +223,209 @@
       .carousel-inner .portfolio-services__p {
         color: var(--kek);
       }
-      
 
+      /*-------------------MUNKAMODSZER-------------*/
+      .work-progress__portfolio{
+        border: 3px solid var(--sarga);
+        border-radius: 10px;
+        margin: 1.5rem;
+        padding: 2rem 0;
+        background-color: rgba(54, 53, 53, 0.8);
+      }
+      /*cim*/
+      .work-progress__h2 {
+        color: var(--sarga);
+        text-align: center;
+        margin-top: -3rem;
+      }
+
+      .work-progress__portfolio h3 {
+        color: var(--sarga);
+      }
+
+      /*hatszog*/
+    .portfolio-hexagon {
+      position: relative;
+      width: 60px; /* Átméretezheted igényeid szerint */
+      height: 34.64px; /* Átméretezheted igényeid szerint */
+      background-color: var(--szurke3); /* Szín igény szerint */
+      margin: 17.32px auto; /* Középre igazítás */
+      margin-top: 2rem;
+    }
+
+    .portfolio-hexagon:before,
+    .portfolio-hexagon:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+    }
+
+    .portfolio-hexagon-inner {
+      position: relative;
+      z-index: 1;
+      border: 2px solid var(--szurke3); /* Keret szélessége és színe */
+    }
+
+    .portfolio-hexagon:before {
+      bottom: 100%;
+      border-bottom: 17.32px solid var(--szurke3); /* Szín igény szerint */
+    }
+
+    .portfolio-hexagon:after {
+      top: 100%;
+      width: 0;
+      border-top: 17.32px solid var(--szurke3); /* Szín igény szerint */
+    }
+
+    /*hatszogben a szamok*/
+    .portfolio-hexagon p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--sarga);
+    }
+
+    /*hatszog alatti leiras*/
+    .portfolio-hexagon__description {
+        text-align: center;
+    }
+
+    /*------------STACK--------------------*/
+    /*skillset*/
+    .stack-h2 {
+        color: var(--kek);
+        text-align: center;
+    }
+
+    .portfolio-stack__section{
+        margin: 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .stack-line {
+        height: 2px;
+        width: calc(90% - 10px);
+        background-color: var(--sarga);
+        margin: 1rem;
+    }
+
+    .portfolio-stack__section h3,
+    .portfolio-stack__section p {
+        color: var(--kek);
+    }
+
+    .portfolio-skillset {
+        text-align: center;
+        border: 3px solid var(--sarga);
+        border-radius:10px;
+        padding-top: 1rem;
+        background-color: var(--atlatszo);
+    }
+    /*support team*/
+    .support-team {
+        text-align: center;
+        border: 3px solid var(--kek);
+        border-radius: 10px;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        background-color: var(--atlatszo);
+    }
+
+    .support-team h3,
+    .support-team p {
+        color: var(--sarga);
+    }
+
+    /*------GYAKRAN HASZNALT------*/
+    .framework-carousel{
+        margin: 1rem;
+        
+        
+ 
+    }
+    .framework-carousel h2{
+        color: var(--sarga);
+        text-align: center;
+        margin: 0 1rem;
+    }
+/*carousel cards*/
+.portfolio-stack__card {
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid var(--sarga);
+    width: 75%;
+    height: 700px;
+    background-color: var(--atlatszo);
+    margin: 1rem 0;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* A tartalom elosztása az elérhető helyen belül */
+}
+
+.portfolio-stack__card p {
+    color: var(--kek);
+    margin: 0.5rem 0; /* Egyenlő távolság a szövegek között */
+}
+
+    /*nyilak*/
+    .framework-arrow {
+        position: absolute;
+        top: 107.5%;
+        transform: translateY(-50%);
+        z-index: 1; /* A nyílak a kép felett legyenek */
+        cursor: pointer;
+        color: var(--sarga);
+        margin:0 1rem;
+
+    }
+        
+  /*---leggygakrabban megrendelt szolgaltatasok----*/
+
+    .common-h2 {
+        color: var(--sarga);
+        text-align: center;
+    }
+/*carousel kartyak*/
+    .portfolio-common__card {
+        border-radius: 10px;
+        text-align: center;
+        border: 3px solid var(--kek);
+        width: 75%;
+        height: 200px;
+        background-color: var(--atlatszo);
+        margin: 1rem 0;  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+    }
+
+    .portfolio-common__card h4 {
+        color: var(--kek);
+        margin-top: 0.5rem;
+    }
+
+    .common-line {
+        height: 2px;
+        width: calc(90% - 10px);
+        background-color: var(--sarga);
+        margin: 1rem;
+    }
+
+    .portfolio-common__card p {
+        color: var(--sarga);
+        overflow: hidden;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .portfolio-common__card p:hover {
+        overflow: auto;
+    }
+    
+
+    
     }
