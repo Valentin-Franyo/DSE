@@ -341,16 +341,16 @@
 
     /*------GYAKRAN HASZNALT------*/
     .framework-carousel{
-        margin: 1rem;
-        
-        
- 
+        margin: 1rem;    
     }
+
     .framework-carousel h2{
         color: var(--sarga);
         text-align: center;
         margin: 0 1rem;
     }
+
+  
 /*carousel cards*/
 .portfolio-stack__card {
     border-radius: 10px;
@@ -383,7 +383,10 @@
     }
         
   /*---leggygakrabban megrendelt szolgaltatasok----*/
-
+    .common-services {
+        margin: 1rem;
+    }
+    
     .common-h2 {
         color: var(--sarga);
         text-align: center;
