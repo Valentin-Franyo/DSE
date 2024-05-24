@@ -431,6 +431,7 @@
         background-color: var(--atlatszo);
         border-radius: 10px;
         margin: 1rem;
+        padding-bottom: 2.5rem;
     }
 
     .carousel-inner__partner {
@@ -464,7 +465,6 @@
         width: 80%;
         padding: 0.5rem 1rem;
         cursor: pointer;
-
     }
 
    
