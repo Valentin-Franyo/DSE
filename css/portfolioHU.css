@@ -386,7 +386,7 @@
     .common-services {
         margin: 1rem;
     }
-    
+
     .common-h2 {
         color: var(--sarga);
         text-align: center;
@@ -430,7 +430,13 @@
     .portfolio-partners__section {
         background-color: var(--atlatszo);
         border-radius: 10px;
+        margin: 1rem;
     }
+
+    .carousel-inner__partner {
+        left: -15%;
+    }
+  
     .first-page__partners h2{
         font-size: 2rem;
         color: var(--sarga);
@@ -458,6 +464,7 @@
         width: 80%;
         padding: 0.5rem 1rem;
         cursor: pointer;
+
     }
 
    
