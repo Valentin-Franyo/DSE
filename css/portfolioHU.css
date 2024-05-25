@@ -7,7 +7,8 @@
 @media only screen and (max-width: 575px) {
         /*elso section*/
         body {
-         background-image:url(../assets/img/background.png);
+           background-image:url(../assets/img/background.png) ;
+           
         }
     .portfolio-section {
         margin-top: 3rem;
@@ -468,12 +469,41 @@
     }
 
    
-  
-    
+/*----------------PROJEKTEK---------------*/
+    .portfolio-projects {
+        margin: 1rem;
+    }  
 
-   
-    
+    .portfolio-projects h2 {
+        color: var(--sarga);
+        text-align: center;
+        margin: 2rem 0;
+      }
+
+      .project-page__card {
+        background-color: var(--atlatszo);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem;
+        padding: 1rem; 
+        position: relative;
+        left: -15%;
+      }
+
+      .project-page__card-p{
+        color: var(--feher);
+        margin-top: 1rem;
+      }
+
+      .project-cards__line {
+        height: 2px;
+        width: calc(90% - 10px);
+        background-color: var(--sarga);
+        margin: 1rem;
+      }
 
 
-     
-    }
+        }
