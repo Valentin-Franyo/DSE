@@ -7,8 +7,7 @@
 @media only screen and (max-width: 575px) {
         /*elso section*/
         body {
-           background-image:url(../assets/img/background.png) ;
-           
+            background-image:url(../assets/img/background.png) ;
         }
     .portfolio-section {
         margin-top: 3rem;
@@ -480,7 +479,7 @@
         text-align: center;
         margin: 2rem 0;
       }
-
+/*kartyak*/
       .project-page__card {
         background-color: var(--atlatszo);
         border-radius: 10px;
@@ -511,5 +510,72 @@
         margin: 1rem;
       }
 
+      .project-btn__arrow {
+        position: absolute;
+        top: 110.5%;
+        transform: translateY(-50%);
+        z-index: 1; /* A nyílak a kép felett legyenek */
+        cursor: pointer;
+        color: var(--sarga);
+        margin:0 -1rem;
+      }
 
+   /* TODO:kidolgozas alatt*/
+   /*   .indicators3 {
+        position: absolute;
+        bottom: -5rem; 
+    }
+
+    .indicators3 [data-bs-target] {
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        margin-right: 0.5rem;
+        border: 3px solid var(--sarga); 
+        cursor: pointer;
+        background-color:transparent;
+        border-radius: 50%; 
+      }
+      
+      .indicators3 [data-bs-target].active {
+        background-color: var(--kek); 
+        border-color: var(--sarga); 
+      }
+ */  
+
+
+/*------------SUGGESTION------------------*/
+      .suggestion {
+        margin-top: 5rem;
+      }
+
+      .suggestion h2 {
+        color: var(--sarga);
+        text-align: center;
+      }
+
+      /*idezetek*/
+      .quote-card {
+            color: var(--feher);
+            border: 3px solid var(--kek);
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
         }
+       
+        .quote-line {
+            height: 2px;
+            width: calc(90% - 10px);
+            background-color: var(--sarga);
+            margin: 1rem;
+        }
+        
+        .first-quote__text {
+            color: var(--sarga);
+            font-size: 0.8rem;
+            text-align: end;
+        }
+      }
+        
