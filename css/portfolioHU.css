@@ -7,7 +7,8 @@
 @media only screen and (max-width: 575px) {
         /*elso section*/
         body {
-            background-image:url(../assets/img/background.png) ;
+            background-color: red;
+           
         }
     .portfolio-section {
         margin-top: 3rem;
@@ -577,5 +578,38 @@
             font-size: 0.8rem;
             text-align: end;
         }
+
+        /*-----------next project session--------*/
+     
+
+        .next-project h2 {
+            color: var(--sarga);
+            text-align: center;
+        }
+
+        .where h3 {
+            color: var(--kek);
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .where ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .where i {
+            font-size: 2rem;
+        }
+        .where li {
+            color: var(--feher);
+            margin: 1rem;
+         
+        }
+
+     
+
+
       }
         
