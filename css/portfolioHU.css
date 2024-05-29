@@ -623,6 +623,8 @@
         .name-card img {
             width: 80%;
             margin: 1rem;
+            border: 3px solid var(--szurke1);
+            border-radius: 5px;
         }
 
 
