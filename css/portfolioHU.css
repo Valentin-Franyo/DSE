@@ -7,7 +7,7 @@
 @media only screen and (max-width: 575px) {
         /*elso section*/
         body {
-            background-color: red;
+            background-color: var(--szurke3);
            
         }
     .portfolio-section {
@@ -608,7 +608,22 @@
          
         }
 
-     
+        /*nevjegy*/
+        .name-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .name-card h3 {
+            color: var(--sarga);
+            text-align: center;
+        }
+
+        .name-card img {
+            width: 80%;
+            margin: 1rem;
+        }
 
 
       }
