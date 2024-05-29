@@ -469,6 +469,48 @@
         cursor: pointer;
     }
 
+    /*---partnerek modal----*/
+    .modal-content {
+        background-color: var(--szurke1);
+    }
+    /*feher csik eltuntetese felul*/
+    .modal-header {
+     border-bottom: 3px solid var(--sarga);
+    }
+    /*alul*/
+    .modal-footer {
+        border-top: 3px solid var(--sarga);
+    }
+    
+    .modal-content h5 {
+        color: var(--sarga);
+        margin: auto;
+    }
+    
+    .modal-body {
+        margin: 1rem;
+        display: flex;
+        justify-content: space-between; /* Oszlopok közötti egyenletes elosztás */
+        flex-wrap: wrap; /* Több sorba kerülés */
+    }
+    
+    .modal-body .modal-image {
+        width: calc(50% - 10px); /* Képek 50%-a, 10px margó az oszlopok között */
+        margin-bottom: 20px; /* Alulra margó a sorok között */
+    }
+    /*modal footer es btn*/
+    .modal-footer {
+        display: flex;
+        justify-content: center; /* Bezárás gomb középre igazítása */
+    }
+    
+    
+    .modal-partner__btn {
+        color: var(--sarga);
+        border: 3px solid var(--kek);
+        padding: 0.5rem 2rem;
+        background-color: transparent;
+    }
    
 /*----------------PROJEKTEK---------------*/
     .portfolio-projects {
