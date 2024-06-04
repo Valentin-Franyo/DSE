@@ -2,14 +2,14 @@ const handleDropdownClicked = (event) => {
   event.stopPropagation();
   const dropdownMenu = event.target.closest(".hambi-dropdown__menu");
   toggleDropdownMenu(dropdownMenu);
-  adjustMenuPositions(); // Menüpozíciók beállítása a labelhez
+  adjustMenuPositions();
 };
 
 const toggleDropdownMenu = (dropdownMenu) => {
   const dropdownIcon = dropdownMenu.querySelector(".material-symbols-outlined");
 
   if (!dropdownMenu.classList.contains("open")) {
-    closeAllDropdownMenus(); // Bezárjuk az összes másik nyitott menüt
+    closeAllDropdownMenus();
     dropdownMenu.classList.add("open");
   } else {
     dropdownMenu.classList.remove("open");
@@ -38,22 +38,12 @@ const adjustMenuPositions = () => {
       const labelHeight = dropdownLabels.offsetHeight;
       menu.style.paddingBottom = `${labelHeight}px`;
     } else {
-      menu.style.paddingBottom = ""; // Visszaállítjuk a paddinget az eredeti értékre
+      menu.style.paddingBottom = "";
     }
   });
 };
 
 document.body.addEventListener("click", () => closeAllDropdownMenus());
-
-// Megkeressük az összes dropdown menüt és hozzáadjuk az eseménykezelőt
-const dropdownMenus = document.querySelectorAll(".hambi-dropdown__menu");
-dropdownMenus.forEach((menu, index) => {
-  const dropdownButton = menu.querySelector("button");
-  const dropdownIcon = menu.querySelector(".material-symbols-outlined");
-  const dropdownIconId = `dropdown-icon-${index + 1}`; // Egyedi azonosító generálása
-  dropdownIcon.id = dropdownIconId; // Beállítjuk az egyedi id-t
-  dropdownButton.addEventListener("click", handleDropdownClicked);
-});
 
 document.addEventListener('DOMContentLoaded', function () {
   var navIcon2 = document.getElementById('nav-icon2');
@@ -62,15 +52,17 @@ document.addEventListener('DOMContentLoaded', function () {
   dropdownMenu.classList.add('hambi-dropdown__menu');
   dropdownMenu.innerHTML = nav.innerHTML;
   dropdownMenu.style.display = 'none';
-  dropdownMenu.style.marginTop = '6rem'; // Felső margó hozzáadása
-  document.body.insertBefore(dropdownMenu, document.body.firstChild.nextSibling);
+  dropdownMenu.style.position = 'fixed'; // Állandó pozíció beállítása
+  dropdownMenu.style.top = '5rem'; // Felső pozíció beállítása
+  dropdownMenu.style.left = '1rem'; // Bal pozíció beállítása
+  document.body.appendChild(dropdownMenu); // Hozzáadjuk a menüt a dokumentumhoz
 
-    navIcon2.addEventListener('click', function () {
-      this.classList.toggle('open');
-      if (dropdownMenu.style.display === 'none') {
-        dropdownMenu.style.display = 'block';
-      } else {
-        dropdownMenu.style.display = 'none';
-      }
-    });
+  navIcon2.addEventListener('click', function () {
+    this.classList.toggle('open');
+    if (dropdownMenu.style.display === 'none') {
+      dropdownMenu.style.display = 'block';
+    } else {
+      dropdownMenu.style.display = 'none';
+    }
   });
+});
