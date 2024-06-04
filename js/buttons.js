@@ -24,3 +24,7 @@ function scrollToProject() {
 document.getElementById('portfolioDownload').addEventListener('click', function() {
     window.open('/assets/portfolio_download/DSE_HU.pdf', '_blank');
 });
+
+// TERULETEK GOMBOK
+
+//big data
